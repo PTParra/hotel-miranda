@@ -18,13 +18,13 @@
         <a class="navbar__logo" href="index.html">
             <p class="navbar__logo__letter">H</p>
             <div class="navbar__logo__text-container">
-                <h3 class="navbar__logo__text-container__title navbar__logo__text-container__title--home">Hotel</h3>
+                <h3 class="navbar__logo__text-container__title">Hotel</h3>
                 <p class="navbar__logo__text-container__subtitle">Miranda</p>
             </div>
         </a>
         <ul class="links-container">
             <li class="links-container__link">
-                <a class="links-container__link__text" href="about.html">About Us</a>
+                <a class="links-container__link__text" href="">About Us</a>
             </li>
             <li class="links-container__link">
                 <a class="links-container__link__text" href="">Rooms</a>
@@ -45,77 +45,56 @@
             </a>
         </div>
     </nav>
-    <main>
+    <main class="main">
+        <p class="main__identifier">
+            Home | <span class="main__identifier__section">About</span>
+        </p>
         <section class="front">
             <article class="front__banner">
-                <h3 class="front__banner__subtitle">THE ULTIMATE LUXURY EXPERIENCE</h3>
-                <h1 class="front__banner__title">The Perfect Base For You</h1>
-                <a class="front__banner__link front__banner__link--tour" href="#">Take a Tour</a>
-                <a class="front__banner__link front__banner__link--learn-more" href="#">Learn more</a>
+                <h3 class="front__banner__subtitle">The Ultimate Luxury</h3>
+                <h1 class="front__banner__title">About Us</h1>
             </article>
-            <form class="front__availability" action="" method="get">
-                <label class="front__availability__label" for="arrival-date">Arrival Date</label>
-                <input class="front__availability__date-input" type="date" name="arrival-date" id="arrival-date">
-                <label class="front__availability__label" for="departure-date">Departure Date</label>
-                <input class="front__availability__date-input" type="date" name="departure-date" id="departure-date">
-                <input class="front__availability__submit" type="submit" value="Check availability">
-            </form>
         </section>
 
         <section class="about">
-            <h4 class="about__subtitle">About Us</h4>
-            <h1 class="about__title">Discover Our Underground.</h1>
-            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et
-                dolore magna aliqua.</p>
-            <a href="#" class="about__link">Learn More</a>
-        </section>
-
-        <section class="rooms">
-            <h4 class="about__subtitle">Rooms</h4>
-            <h2 class="rooms__title">Hand Picked Rooms</h2>
-            <!-- TODO: Cuando implemente swiper volver aqui-->
-            <article>
-                <h3>Minimal Duplex Room</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore.</p>
-                <p><strong>$345/Night</strong></p>
-                <button>Book Now</button>
-            </article>
-            <article>
-                <h3>Minimal Duplex Room</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore.</p>
-                <p><strong>$345/Night</strong></p>
-                <button>Book Now</button>
-            </article>
-            <article>
-                <h3>Minimal Duplex Room</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore.</p>
-                <p><strong>$345/Night</strong></p>
-                <button>Book Now</button>
-            </article>
-            <article>
-                <h3>Minimal Duplex Room</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore.</p>
-                <p><strong>$345/Night</strong></p>
-                <button>Book Now</button>
-            </article>
-        </section>
-
-        <section class="video-presentation-container">
-            <h4 class="video-presentation-container__subtitle">Intro video</h4>
-            <h2 class="video-presentation-container__title">Meet With Our Luxury Place.</h2>
-            <p class="video-presentation-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
-            <iframe class="video-presentation-container__video" width="560" height="315"
+            <iframe class="about__video" width="560" height="315"
                 src="https://www.youtube.com/embed/Bu3Doe45lcU?si=C1JsdFb_5tVdT1w0&amp;start=25&end=75"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h1 class="about__title">Hello. Our hotel has been present for over 20 years. We make the best for all our customers.</h1>
+            <button class="about__button" type="button">
+                <img src="assets/icons/about-page/options/breakfast.png" alt="">
+                <p>Breakfast</p>
+            </button>
+            <button class="about__button about__button--active" type="button">
+                <img src="assets/icons/about-page/options/airplane.png" alt="">
+                <p>Airport Pickup</p>
+            </button>
+            <button class="about__button" type="button">
+                <img src="assets/icons/about-page/options/city-guide.png" alt="">
+                <p>City Guide</p>
+            </button>
+            <button class="about__button" type="button">
+                <img src="assets/icons/about-page/options/barbeque.png" alt="">
+                <p>BBQ Party</p>
+            </button>
+            <button class="about__button" type="button">
+                <img src="assets/icons/about-page/options/luxury-room.png" alt="">
+                <p>Luxury Room</p>
+            </button>
+            <article class="about__benefit">
+                <img class="about__benefit__image" src="assets/images/placeholder-image.png" alt="">
+                <div class="about__benefit__text-container">
+                    <h4 class="about__benefit__text-container__subtitle">Restaurant</h4>
+                    <h2 class="about__benefit__text-container__title">Get Restaurant Facilities & Many Other More</h2>
+                    <p class="about__benefit__text-container__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et 
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    </p>
+                    <a href="#" class="about__benefit__text-container__link">Take a Tour</a>
+                </div>
+            </article>
         </section>
 
         <section class="facilities">
@@ -185,102 +164,41 @@
             </ul>
         </section>
 
-        <section class="menu">
-            <img src="assets/icons/home-page/menu/donut.png" alt="">
-            <h4 class="menu__subtitle">Menu</h4>
-            <h2 class="menu__title">Our Foods Menu</h2>
-            <button class="menu__button menu__button--left">&lt;</button>
-            <button class="menu__button menu__button--right">&gt;</button>
-            <ul class="menu__food-list">
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Eggs & Bacon</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
+        <section class="counter">
+            <h4 class="counter__subtitle">Menu</h4>
+            <h2 class="counter__title">Our Foods Menu</h2>
+            <ul class="counter__archievement-list">
+                <li class="counter__archievement-list__archievement">
+                    <div class="counter__archievement-list__archievement__left-part">
+                        <img class="counter__archievement-list__archievement__left-part__image" 
+                        src="assets/icons/about-page/counter/happy-users.png" alt="">
+                        <h2 class="counter__archievement-list__archievement__left-part__title">8000</h2>
+                        <p class="counter__archievement-list__archievement__left-part__subtitle">Happy Users</p>
+                    </div>
+                    <img class="counter__archievement-list__archievement__arrow" src="assets/icons/about-page/white-arrow.png" alt="">
                 </li>
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Fruit Parfait</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
+                <li class="counter__archievement-list__archievement">
+                    <div class="counter__archievement-list__archievement__left-part">
+                        <img class="counter__archievement-list__archievement__left-part__image"
+                        src="assets/icons/about-page/counter/ratings.png" alt="">
+                        <h2 class="counter__archievement-list__archievement__left-part__title">10M</h2>
+                        <p class="counter__archievement-list__archievement__left-part__subtitle">Reviews & Appriciate</p>
+                    </div>
+                    <img class="counter__archievement-list__archievement__arrow" src="assets/icons/about-page/white-arrow.png" alt="">
                 </li>
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Cheese Plate</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
-                </li>
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Tea or Coffee</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
-                </li>
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Marmalade Selection</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
-                </li>
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Chia Oatmeal</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
+                <li class="counter__archievement-list__archievement">
+                    <div class="counter__archievement-list__archievement__left-part">
+                        <img class="counter__archievement-list__archievement__left-part__image"
+                        src="assets/icons/about-page/counter/world.png" alt="">
+                        <h2 class="counter__archievement-list__archievement__left-part__title">100</h2>
+                        <p class="counter__archievement-list__archievement__left-part__subtitle">Country Coverage</p>
+                    </div>
+                    <img class="counter__archievement-list__archievement__arrow" src="assets/icons/about-page/white-arrow.png" alt="">
                 </li>
             </ul>
-        </section>
-
-        <section class="hotel-images">
-            <img class="hotel-images__image" src="assets/images/placeholder-image.png" alt="">
-            <img class="hotel-images__image" src="assets/images/placeholder-image.png" alt="">
-            <img class="hotel-images__image" src="assets/images/placeholder-image.png" alt="">
-        </section>
-
-        <section class="satisfaction">
-            <article class="satisfaction__archievement">
-                <img class="satisfaction__archievement__image" src="assets/icons/home-page/numbers/rocket.png" alt="">
-                <h2 class="satisfaction__archievement__title">84k+</h2>
-                <p class="satisfaction__archievement__subtitle">Projects are Completed</p>
-            </article>
-            <article class="satisfaction__archievement">
-                <img class="satisfaction__archievement__image" src="assets/icons/home-page/numbers/people.png" alt="">
-                <h2 class="satisfaction__archievement__title">10M+</h2>
-                <p class="satisfaction__archievement__subtitle">Active Backers Around World</p>
-            </article>
-            <article class="satisfaction__archievement">
-                <img class="satisfaction__archievement__image" src="assets/icons/home-page/numbers/profit.png" alt="">
-                <h2 class="satisfaction__archievement__title">02k+</h2>
-                <p class="satisfaction__archievement__subtitle">Categories Served</p>
-            </article>
-            <article class="satisfaction__archievement">
-                <img class="satisfaction__archievement__image" src="assets/icons/home-page/numbers/book.png" alt="">
-                <h2 class="satisfaction__archievement__title">100M+</h2>
-                <p class="satisfaction__archievement__subtitle">Idea Raised Funds</p>
+            <article class="counter__images">
+                <img src="assets/images/placeholder-image.png" alt="">
+                <img src="assets/images/placeholder-image.png" alt="">
             </article>
         </section>
     </main>
