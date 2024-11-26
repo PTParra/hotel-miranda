@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Miranda</title>
+</head>
+
+<body>
+    <header class="header">
+        <p class="header__title">We Make Your Feel Comfortable</p>
+    </header>
+    <nav class="navbar">
+        <button type="button" class="navbar__hamburger-button">
+            <img class="navbar__hamburger-button__image" src="assets/icons/navbar/open-menu.png" alt="">
+        </button>
+        <a class="navbar__logo" href="index.html">
+            <p class="navbar__logo__letter">H</p>
+            <div class="navbar__logo__text-container">
+                <h3 class="navbar__logo__text-container__title">Hotel</h3>
+                <p class="navbar__logo__text-container__subtitle">Miranda</p>
+            </div>
+        </a>
+        <ul class="links-container">
+            <li class="links-container__link">
+                <a class="links-container__link__text" href="about.html">About Us</a>
+            </li>
+            <li class="links-container__link">
+                <a class="links-container__link__text" href="room-list.html">Rooms</a>
+            </li>
+            <li class="links-container__link">
+                <a class="links-container__link__text" href="offers.html">Offers</a>
+            </li>
+            <li class="links-container__link">
+                <a class="links-container__link__text" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="navbar__buttons">
+            <a class="navbar__buttons__button navbar__buttons__button--user" href="#">
+                <img class="navbar__buttons__button__image" src="assets/icons/navbar/user-icon.png" alt="">
+            </a>
+            <a class="navbar__buttons__button navbar__buttons__button--search" href="#">
+                <img class="navbar__buttons__button__image" src="assets/icons/navbar/search-icon.png" alt="">
+            </a>
+        </div>
+    </nav>
+    <main class="main">
+        <p class="main__identifier">
+            Home | <span class="main__identifier__section">Contact</span>
+        </p>
+        <section class="front">
+            <article class="front__banner">
+                <h3 class="front__banner__subtitle">The Ultimate Luxury</h3>
+                <h1 class="front__banner__title">Contact Us</h1>
+            </article>
+        </section>
+
+        <section class="info">
+            <div class="info__media">
+                <article class="info__media__contact-media">
+                    <div class="info__media__contact-media__text">
+                        <h3 class="info__media__contact-media__text__title">Hotel Address</h3>
+                        <p class="info__media__contact-media__text__text">
+                            Calle Princesa 31, planta 2 28008 Madrid
+                        </p>
+                    </div>
+                </article>
+                <article class="info__media__contact-media">
+                    <div class="info__media__contact-media__text">
+                        <h3 class="info__media__contact-media__text__title">Phone Number</h3>
+                        <a class="info__media__contact-media__text__text" href="tel:+34675850515">
+                            +34 675 85 05 15
+                        </a>
+                    </div>
+                </article>
+                <article class="info__media__contact-media">
+                    <div class="info__media__contact-media__text">
+                        <h3 class="info__media__contact-media__text__title">Email</h3>
+                        <a class="info__media__contact-media__text__text" href="mailto:patriciotristante1999@gmail.com">
+                            patriciotristante1999@gmail.com
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <img src="assets/images/placeholder-image.png" alt="">
+        </section>
+
+        <form class="form" action="" method="get">
+            <input class="form__text-input" type="text" name="name" id="name" placeholder="Your full name">
+            <input class="form__text-input" type="text" name="email" id="email" placeholder="Enter email address">
+            <input class="form__text-input" type="text" name="phone" id="phone" placeholder="Add phone number">
+            <input class="form__text-input" type="text" name="subject" id="subject" placeholder="Enter subject">
+            <textarea class="form__textarea-input" name="message" id="message" cols="30" rows="10" placeholder="Enter message"></textarea>
+            <input class="form__submit" type="submit" value="Send">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top-container">
+            <div class="footer__top-container__hotel">
+                <a class="footer__top-container__hotel__logo" href="index.html">
+                    <p class="footer__top-container__hotel__logo__letter">H</p>
+                    <div class="footer__top-container__hotel__logo__text-container">
+                        <h3 class="footer__top-container__hotel__logo__text-container__title">Hotel</h3>
+                        <p class="footer__top-container__hotel__logo__text-container__subtitle">Miranda</p>
+                    </div>
+                </a>
+                <p class="footer__top-container__hotel__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doing eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi.</p>
+                <div class="footer__top-container__hotel__socials">
+                    <a href="#" class="footer__top-container__hotel__socials__link">
+                        <img src="assets/icons/footer/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="footer__top-container__hotel__socials__link">
+                        <img src="assets/icons/footer/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="#" class="footer__top-container__hotel__socials__link">
+                        <img src="assets/icons/footer/behance.png" alt="Behance">
+                    </a>
+                    <a href="#" class="footer__top-container__hotel__socials__link">
+                        <img src="assets/icons/footer/linkedin.png" alt="Linkedin">
+                    </a>
+                    <a href="#" class="footer__top-container__hotel__socials__link">
+                        <img src="assets/icons/footer/youtube.png" alt="Youtube">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__top-container__services">
+                <h3 class="footer__top-container__services__title">Services</h3>
+                <ul class="footer__top-container__services__list">
+                    <li class="footer__top-container__services__list__item">+ Restaurant & Bar</li>
+                    <li class="footer__top-container__services__list__item">+ Swimming Pool</li>
+                    <li class="footer__top-container__services__list__item">+ Wellness & Spa</li>
+                    <li class="footer__top-container__services__list__item">+ Restaurant</li>
+                    <li class="footer__top-container__services__list__item">+ Conference Room</li>
+                    <li class="footer__top-container__services__list__item">+ Cocktail Party House</li>
+                </ul>
+                <ul class="footer__top-container__services__list">
+                    <li class="footer__top-container__services__list__item">+ Gaming Zone</li>
+                    <li class="footer__top-container__services__list__item">+ Marriage Party</li>
+                    <li class="footer__top-container__services__list__item">+ Party Planning</li>
+                    <li class="footer__top-container__services__list__item">+ Tour Consultancy</li>
+                </ul>
+            </div>
+            <div class="footer__top-container__contact-info">
+                <h3 class="footer__top-container__contact-info__title">Contact Us</h3>
+                <div class="footer__top-container__contact-info__media">
+                    <img class="contact-info__media__image" src="assets/icons/footer/phone.png" alt="">
+                    <div class="contact-info__media__data">
+                        <h3 class="contact-info__media__data__title">Phone Number</h3>
+                        <a class="contact-info__media__data__text" href="tel:+34675850515">
+                            +34 675 85 05 15
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__top-container__contact-info__media">
+                    <img class="contact-info__media__image" src="assets/icons/footer/mail.png" alt="">
+                    <div class="contact-info__media__data">
+                        <h3 class="contact-info__media__data__title">Email</h3>
+                        <a class="contact-info__media__data__text" href="mailto:patriciotristante1999@gmail.com">
+                            patriciotristante1999@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__top-container__contact-info__media">
+                    <img class="contact-info__media__image" src="assets/icons/footer/location-footer.png" alt="">
+                    <div class="contact-info__media__data">
+                        <h3 class="contact-info__media__data__title">Location</h3>
+                        <p class="contact-info__media__data__text">
+                            Calle Princesa 31, planta 2 28008 Madrid
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom-container">
+            <p class="footer__bottom-container__text">Copyright By@Example - 2020</p>
+            <p class="footer__bottom-container__text">
+                <a href="#" class="footer__bottom-container__text__link">Terms of Use</a> | 
+                <a href="#" class="footer__bottom-container__text__link">Privacy Environmental Policy</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
