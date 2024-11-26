@@ -30,7 +30,7 @@
                 <a class="links-container__link__text" href="room-list.html">Rooms</a>
             </li>
             <li class="links-container__link">
-                <a class="links-container__link__text" href="">Offers</a>
+                <a class="links-container__link__text" href="offers.html">Offers</a>
             </li>
             <li class="links-container__link">
                 <a class="links-container__link__text" href="">Contact</a>
@@ -58,195 +58,296 @@
         </section>
 
         <section class="rooms">
+            <select class="rooms__order-by-price" name="order-price" id="order-price">
+                <option value="">Order By:</option>
+                <option value="lower">Lower Price</option>
+                <option value="higher">Higher Price</option>
+            </select>
             <div class="rooms__grid-container">
                 <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
+                    <a href="room-details.html" class="rooms__grid-container__room__image-link">
+                        <img class="rooms__grid-container__room__image-link__image" src="assets/images/placeholder-image.png" alt="">
+                    </a>
+                    <ul class="rooms__grid-container__room__room-perks">
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bed.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/wifi.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/car.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/heater.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/gym.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bar.png" alt="">
+                        </li>
+                    </ul>
+                    <a href="room-details.html" class="rooms__grid-container__room__name">Minimal Duplex Room</a>
                     <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
                     <p class="rooms__grid-container__room__price">$345/Night</p>
                     <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
                 </article>
                 <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
+                    <a href="room-details.html" class="rooms__grid-container__room__image-link">
+                        <img class="rooms__grid-container__room__image-link__image" src="assets/images/placeholder-image.png" alt="">
+                    </a>
+                    <ul class="rooms__grid-container__room__room-perks">
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bed.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/wifi.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/car.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/heater.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/gym.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bar.png" alt="">
+                        </li>
+                    </ul>
+                    <a href="room-details.html" class="rooms__grid-container__room__name">Minimal Duplex Room</a>
                     <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
                     <p class="rooms__grid-container__room__price">$345/Night</p>
                     <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
                 </article>
                 <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
+                    <a href="room-details.html" class="rooms__grid-container__room__image-link">
+                        <img class="rooms__grid-container__room__image-link__image" src="assets/images/placeholder-image.png" alt="">
+                    </a>
+                    <ul class="rooms__grid-container__room__room-perks">
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bed.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/wifi.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/car.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/heater.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/gym.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bar.png" alt="">
+                        </li>
+                    </ul>
+                    <a href="room-details.html" class="rooms__grid-container__room__name">Minimal Duplex Room</a>
                     <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
                     <p class="rooms__grid-container__room__price">$345/Night</p>
                     <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
                 </article>
                 <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
+                    <a href="room-details.html" class="rooms__grid-container__room__image-link">
+                        <img class="rooms__grid-container__room__image-link__image" src="assets/images/placeholder-image.png" alt="">
+                    </a>
+                    <ul class="rooms__grid-container__room__room-perks">
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bed.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/wifi.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/car.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/heater.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/gym.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bar.png" alt="">
+                        </li>
+                    </ul>
+                    <a href="room-details.html" class="rooms__grid-container__room__name">Minimal Duplex Room</a>
                     <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
                     <p class="rooms__grid-container__room__price">$345/Night</p>
                     <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
                 </article>
                 <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
+                    <a href="room-details.html" class="rooms__grid-container__room__image-link">
+                        <img class="rooms__grid-container__room__image-link__image" src="assets/images/placeholder-image.png" alt="">
+                    </a>
+                    <ul class="rooms__grid-container__room__room-perks">
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bed.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/wifi.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/car.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/heater.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/gym.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bar.png" alt="">
+                        </li>
+                    </ul>
+                    <a href="room-details.html" class="rooms__grid-container__room__name">Minimal Duplex Room</a>
                     <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
                     <p class="rooms__grid-container__room__price">$345/Night</p>
                     <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
                 </article>
                 <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
+                    <a href="room-details.html" class="rooms__grid-container__room__image-link">
+                        <img class="rooms__grid-container__room__image-link__image" src="assets/images/placeholder-image.png" alt="">
+                    </a>
+                    <ul class="rooms__grid-container__room__room-perks">
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bed.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/wifi.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/car.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/heater.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/gym.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bar.png" alt="">
+                        </li>
+                    </ul>
+                    <a href="room-details.html" class="rooms__grid-container__room__name">Minimal Duplex Room</a>
                     <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
                     <p class="rooms__grid-container__room__price">$345/Night</p>
                     <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
                 </article>
                 <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
+                    <a href="room-details.html" class="rooms__grid-container__room__image-link">
+                        <img class="rooms__grid-container__room__image-link__image" src="assets/images/placeholder-image.png" alt="">
+                    </a>
+                    <ul class="rooms__grid-container__room__room-perks">
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bed.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/wifi.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/car.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/heater.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/gym.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bar.png" alt="">
+                        </li>
+                    </ul>
+                    <a href="room-details.html" class="rooms__grid-container__room__name">Minimal Duplex Room</a>
                     <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
                     <p class="rooms__grid-container__room__price">$345/Night</p>
                     <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
                 </article>
                 <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
+                    <a href="room-details.html" class="rooms__grid-container__room__image-link">
+                        <img class="rooms__grid-container__room__image-link__image" src="assets/images/placeholder-image.png" alt="">
+                    </a>
+                    <ul class="rooms__grid-container__room__room-perks">
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bed.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/wifi.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/car.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/heater.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/gym.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bar.png" alt="">
+                        </li>
+                    </ul>
+                    <a href="room-details.html" class="rooms__grid-container__room__name">Minimal Duplex Room</a>
                     <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
                     <p class="rooms__grid-container__room__price">$345/Night</p>
                     <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
                 </article>
                 <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
-                    <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <p class="rooms__grid-container__room__price">$345/Night</p>
-                    <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
-                </article>
-                <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
-                    <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <p class="rooms__grid-container__room__price">$345/Night</p>
-                    <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
-                </article>
-                <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
-                    <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <p class="rooms__grid-container__room__price">$345/Night</p>
-                    <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
-                </article>
-                <article class="rooms__grid-container__room">
-                    <img class="rooms__grid-container__room__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="rooms__grid-container__room__room-perks">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                        <img class="rooms__grid-container__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                    </div>
-                    <h2 class="rooms__grid-container__room__name">Minimal Duplex Room</h2>
+                    <a href="room-details.html" class="rooms__grid-container__room__image-link">
+                        <img class="rooms__grid-container__room__image-link__image" src="assets/images/placeholder-image.png" alt="">
+                    </a>
+                    <ul class="rooms__grid-container__room__room-perks">
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bed.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/wifi.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/car.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/heater.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/gym.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                        </li>
+                        <li class="room-perks__perk">
+                            <img class="room-perks__perk__icon" src="assets/icons/room-icons-black/bar.png" alt="">
+                        </li>
+                    </ul>
+                    <a href="room-details.html" class="rooms__grid-container__room__name">Minimal Duplex Room</a>
                     <p class="rooms__grid-container__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
                     <p class="rooms__grid-container__room__price">$345/Night</p>
                     <a href="room-details.html" class="rooms__grid-container__room__book-button">Booking Now</a>
