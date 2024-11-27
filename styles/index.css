@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.header {
+  position: relative;
+}
+.header__title {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  filter: drop-shadow(rgba(0, 0, 0, 0.3764705882) 0 0 3px);
+  z-index: 50;
+}
+.navbar__hamburger-button {
+  background-color: transparent;
+  border: none;
+  display: block;
+}
+.navbar__hamburger-button__image {
+  display: block;
+  width: 24px;
+}
+.navbar__logo {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #111111;
+  text-transform: uppercase;
+  width: 55%;
+}
+.navbar__logo__letter {
+  font-family: "Archivo", sans-serif;
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  background-color: white;
+  filter: drop-shadow(rgba(139, 139, 139, 0.3764705882) 0 0 10px);
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.navbar__logo__text-container {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+}
+.navbar__logo__text-container__title {
+  font-weight: 700;
+}
+.navbar .links-container {
+  display: none;
+}
+.navbar__buttons__button {
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar__buttons__button__image {
+  display: block;
+  width: 25px;
+}
+.navbar__buttons__button--user {
+  margin-right: 1.2rem;
+}
+
+.front {
+  background-color: #333333;
+}
+.front__banner {
+  padding: 3rem 1rem;
+  color: white;
+}
+.front__banner__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  width: 70%;
+  line-height: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.front__banner__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  margin-bottom: 1rem;
+}
+.front__banner__link {
+  font-family: "Archivo", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.3294117647);
+  padding: 1.4rem 2.5rem;
+  letter-spacing: 0.2rem;
+}
+.front__banner__link--tour {
+  background-color: #BDAC8D;
+  border: none;
+  margin-bottom: 1.5rem;
+  margin-right: 2rem;
+}
+.front__availability {
+  padding: 3rem 1rem;
+  background-color: #222222;
+}
+.front__availability__label {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.front__availability__date-input {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+  padding: 0.5rem 0;
+  padding-left: 1.8rem;
+  color: #BDBDBD;
+  margin-bottom: 2rem;
+}
+.front__availability__date-input::-webkit-inner-spin-button, .front__availability__date-input::-webkit-calendar-picker-indicator {
+  content: url("../../assets/icons/home-page/calendar.png");
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+}
+.front__availability__submit {
+  font-family: "Archivo", sans-serif;
+  border: none;
+  background-color: #BEAD8E;
+  color: white;
+  padding: 1.4rem 2rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.about-section {
+  margin-top: 3.75rem;
+  margin-bottom: 2.5rem;
+}
+.about-section__text-container {
+  background-color: #F9F9F9;
+  padding: 1.5rem;
+  padding-bottom: 8rem;
+}
+.about-section__text-container__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #777777;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.8rem;
+}
+.about-section__text-container__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  color: #111111;
+  margin-bottom: 1rem;
+}
+.about-section__text-container__text {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.about-section__text-container__link {
+  display: inline-block;
+  font-family: "Archivo", sans-serif;
+  color: white;
+  text-decoration: none;
+  background-color: #BDAC8D;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  padding: 1.3rem 2.5rem;
+}
+.about-section__images-container {
+  margin-top: -5.5rem;
+  padding: 0 3rem;
+}
+.about-section__images-container__column {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.about-section__images-container__column__image {
+  width: 100%;
+  aspect-ratio: 4/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-section__images-container__column__text-container {
+  position: relative;
+  text-align: center;
+  padding: 4rem 0;
+}
+.about-section__images-container__column__text-container .text-container__bg-image {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  opacity: 0.15;
+  width: 50%;
+}
+.about-section__images-container__column__text-container .text-container__image {
+  margin-bottom: 0.7rem;
+}
+.about-section__images-container__column__text-container .text-container__title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Old Standard TT", serif;
+  letter-spacing: -0.1rem;
+  margin-bottom: 0.7rem;
+}
+.about-section__images-container__column__text-container .text-container__text {
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  width: 70%;
+  margin: 0 auto;
+}
+.about-section__images-container__column__text-container--dark-bg {
+  background-color: #222222;
+  color: white;
+}
+.about-section__images-container__column--lower-height {
+  margin: 0;
+}
+
+.rooms-section {
+  margin-bottom: 2.5rem;
+}
+.rooms-section__subtitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #777777;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.rooms-section__title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  font-family: "Old Standard TT", serif;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.rooms-section__swiper {
+  width: 100%;
+  position: relative;
+}
+.rooms-section__swiper .room-selection {
+  text-align: center;
+}
+.rooms-section__swiper .room-selection__image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -1.5rem;
+}
+.rooms-section__swiper .room-selection__characteristics {
+  padding: 0.8rem 1.5rem;
+  list-style: none;
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: white;
+  position: relative;
+}
+.rooms-section__swiper .room-selection__description {
+  transition: opacity 150ms ease-in;
+  opacity: 0;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -1.5rem;
+  background-color: white;
+  position: relative;
+  padding: 1rem 2rem;
+}
+.rooms-section__swiper .room-selection__description__text-container__name {
+  display: inline-block;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  color: #111111;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.rooms-section__swiper .room-selection__description__text-container__mini-description {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.rooms-section__swiper .room-selection__description__price {
+  font-size: 2rem;
+  color: #BDAC8D;
+  font-weight: 700;
+}
+.rooms-section__swiper .room-selection__description__price__per-night {
+  font-size: 0.8rem;
+}
+.rooms-section__swiper .room-selection.swiper-slide-active .room-selection__description {
+  opacity: 1;
+}
+.rooms-section__swiper .swiper-button-prev, .rooms-section__swiper .swiper-button-next {
+  position: absolute;
+  top: 35%;
+  padding: 0 1.3rem;
+}
+.rooms-section__swiper .swiper-button-prev {
+  left: 3%;
+  background-color: white;
+}
+.rooms-section__swiper .swiper-button-next {
+  right: 3%;
+  background-color: white;
+}
+.rooms-section__swiper .swiper-button-prev::after, .rooms-section__swiper .swiper-button-next::after {
+  font-size: 0.7rem;
+  color: #111111;
+}
+
+.video-presentation-container {
+  background-color: #222222;
+  padding: 3rem 1.5rem;
+  margin-bottom: 3.75rem;
+}
+.video-presentation-container__subtitle {
+  color: #BDAC8D;
+  font-family: "Archivo", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.video-presentation-container__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  color: white;
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
+.video-presentation-container__text {
+  font-family: "Archivo", sans-serif;
+  color: #C2C2C2;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+.video-presentation-container__video {
+  width: 100%;
+  margin-bottom: 2.25rem;
+}
+.video-presentation-container__learn-more {
+  font-family: "Archivo", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 1.4rem 2.5rem;
+  letter-spacing: 0.2rem;
+  background-color: #BDAC8D;
+}
+
+.facilities-section {
+  margin-bottom: 4rem;
+}
+.facilities-section__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #777777;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.facilities-section__title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  font-family: "Old Standard TT", serif;
+  text-align: center;
+}
+.facilities-section .feature {
+  padding-bottom: 4rem;
+  padding-right: 4rem;
+  padding-left: 2rem;
+  padding-top: 6rem;
+  position: relative;
+}
+.facilities-section .feature__number {
+  font-family: "Archivo", sans-serif;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  font-size: 7.5rem;
+  color: rgba(34, 34, 34, 0.0392156863);
+  font-weight: 700;
+}
+.facilities-section .feature__icon {
+  margin-bottom: 1.75rem;
+}
+.facilities-section .feature__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+}
+.facilities-section .feature__text {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+.facilities-section .features-list-swiper .swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+}
+.facilities-section .features-list-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #BDAC8D;
+}
+
+.menu {
+  position: relative;
+  padding: 1.5rem;
+  padding-top: 7rem;
+  overflow-x: hidden;
+}
+.menu__donut-image {
+  position: absolute;
+  right: -7%;
+  top: 0;
+  width: 115px;
+}
+.menu__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #777777;
+  margin-bottom: 1.5rem;
+}
+.menu__title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  font-family: "Old Standard TT", serif;
+}
+.menu .food-list {
+  list-style-type: none;
+}
+.menu .food-list .food {
+  margin-bottom: 1rem;
+}
+.menu .food-list .food__link {
+  display: flex;
+  justify-content: space-between;
+  color: #111111;
+  text-decoration: none;
+}
+.menu .food-list .food__link__image {
+  width: 40%;
+  height: auto;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu .food-list .food__link__text-container {
+  width: 55%;
+  padding: 1rem 0;
+  padding-bottom: 0;
+}
+.menu .food-list .food__link__text-container__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+}
+.menu .food-list .food__link__text-container__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.menu .food-list .food__link__text-container__hidden-arrow {
+  display: none;
+}
+.menu .food-list-swiper {
+  padding-bottom: 5rem;
+}
+.menu .food-list-swiper .swiper-button-next, .menu .food-list-swiper .swiper-button-prev {
+  position: absolute;
+  background-color: #F9F9F9;
+  padding: 0 1.3rem;
+  top: 95%;
+}
+.menu .food-list-swiper .swiper-button-next {
+  right: 0;
+}
+.menu .food-list-swiper .swiper-button-prev {
+  left: 70%;
+}
+.menu .food-list-swiper .swiper-button-next::after, .menu .food-list-swiper .swiper-button-prev::after {
+  color: #111111;
+  font-size: 0.7rem;
+}/*# sourceMappingURL=index.css.map */

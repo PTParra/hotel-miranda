@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Miranda</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="scripts/home.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -49,7 +53,7 @@
         <section class="front">
             <article class="front__banner">
                 <h3 class="front__banner__subtitle">THE ULTIMATE LUXURY EXPERIENCE</h3>
-                <h1 class="front__banner__title">The Perfect Base For You</h1>
+                <h1 class="front__banner__title front__banner__title--home">The Perfect Base For You</h1>
                 <a class="front__banner__link front__banner__link--tour" href="#">Take a Tour</a>
                 <a class="front__banner__link front__banner__link--learn-more" href="#">Learn more</a>
             </article>
@@ -62,114 +66,205 @@
             </form>
         </section>
 
-        <section class="about">
-            <article class="about__images-container">
-                <div class="about__images-container__column">
-                    <img class="about__images-container__column__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="about__images-container__column__text-container">
-                        <img src="assets/icons/home-page/about-us/team.png" alt="">
-                        <img src="assets/icons/home-page/about-us/team.png" alt="">
-                        <h3>Strong Team</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                </div>
-                <div class="about__images-container__column about__images-container__column--lower-height">
-                    <img class="about__images-container__column__image" src="assets/images/placeholder-image.png" alt="">
-                    <div class="about__images-container__column__text-container about__images-container__column__text-container--dark-bg">
-                        <img src="assets/icons/home-page/about-us/calendar.png" alt="">
-                        <h3>Luxury Room</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                </div>
+        <section class="about-section">
+            <article class="about-section__text-container">
+                <h4 class="about-section__text-container__subtitle">About Us</h4>
+                <h1 class="about-section__text-container__title">Discover Our Underground.</h1>
+                <p class="about-section__text-container__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <a href="#" class="about-section__text-container__link">Learn More</a>
             </article>
-            <article class="about__text-container">
-                <h4 class="about__text-container__subtitle">About Us</h4>
-                <h1 class="about__text-container__title">Discover Our Underground.</h1>
-                <p class="about__text-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et
-                    dolore magna aliqua.</p>
-                <a href="#" class="about__text-container__link">Learn More</a>
+            <article class="about-section__images-container">
+                <div class="about-section__images-container__column">
+                    <img class="about-section__images-container__column__image"
+                        src="assets/images/placeholder-image.png" alt="">
+                    <div class="about-section__images-container__column__text-container">
+                        <img class="text-container__bg-image" src="assets/icons/home-page/about-us/team.png" alt="">
+                        <img class="text-container__image" src="assets/icons/home-page/about-us/team.png" alt="">
+                        <h3 class="text-container__title">Strong Team</h3>
+                        <p class="text-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div
+                    class="about-section__images-container__column about-section__images-container__column--lower-height">
+                    <img class="about-section__images-container__column__image"
+                        src="assets/images/placeholder-image.png" alt="">
+                    <div
+                        class="about-section__images-container__column__text-container about-section__images-container__column__text-container--dark-bg">
+                        <img class="text-container__image" src="assets/icons/home-page/about-us/calendar.png" alt="">
+                        <h3 class="text-container__title">Luxury Room</h3>
+                        <p class="text-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor.</p>
+                    </div>
+                </div>
             </article>
         </section>
 
-        <section class="rooms">
-            <h4 class="rooms__subtitle">Rooms</h4>
-            <h2 class="rooms__title">Hand Picked Rooms</h2>
-            <!-- TODO: Cuando implemente swiper volver aqui-->
-            <article>
-                <div>
-                    <img src="assets/icons/room-icons-black/bed.png" alt="">
-                    <img src="assets/icons/room-icons-black/wifi.png" alt="">
-                    <img src="assets/icons/room-icons-black/car.png" alt="">
-                    <img src="assets/icons/room-icons-black/heater.png" alt="">
-                    <img src="assets/icons/room-icons-black/gym.png" alt="">
-                    <img src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                    <img src="assets/icons/room-icons-black/bar.png" alt="">
+        <section class="rooms-section">
+            <h4 class="rooms-section__subtitle">Rooms</h4>
+            <h2 class="rooms-section__title">Hand Picked Rooms</h2>
+
+            <div class="swiper rooms-section__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <article class="swiper-slide room-selection">
+
+                        <ul class="room-selection__characteristics">
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/bed.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/wifi.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/car.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/heater.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/gym.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/bar.png" alt="">
+                            </li>
+                        </ul>
+                        <img class="room-selection__image" src="assets/images/placeholder-image.png" alt="">
+                        <div class="room-selection__description">
+                            <div class="room-selection__description__text-container">
+                                <a class="room-selection__description__text-container__name"
+                                    href="room-details.html">Minimal Duplex Room</a>
+                                <p class="room-selection__description__text-container__mini-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore.
+                                </p>
+                            </div>
+                            <p class="room-selection__description__price">
+                                $345<span class="room-selection__description__price__per-night">/Night</span>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="swiper-slide room-selection">
+
+                        <ul class="room-selection__characteristics">
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/bed.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/wifi.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/car.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/heater.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/gym.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/bar.png" alt="">
+                            </li>
+                        </ul>
+                        <img class="room-selection__image" src="assets/images/placeholder-image.png" alt="">
+                        <div class="room-selection__description">
+                            <div class="room-selection__description__text-container">
+                                <a class="room-selection__description__text-container__name"
+                                    href="room-details.html">Minimal Duplex Room</a>
+                                <p class="room-selection__description__text-container__mini-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore.
+                                </p>
+                            </div>
+                            <p class="room-selection__description__price">
+                                $345<span class="room-selection__description__price__per-night">/Night</span>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="swiper-slide room-selection">
+
+                        <ul class="room-selection__characteristics">
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/bed.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/wifi.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/car.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/heater.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/gym.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                            </li>
+                            <li class="room-selection__characteristics__perk">
+                                <img class="room-selection__characteristics__perk__icon"
+                                    src="assets/icons/room-icons-black/bar.png" alt="">
+                            </li>
+                        </ul>
+                        <img class="room-selection__image" src="assets/images/placeholder-image.png" alt="">
+                        <div class="room-selection__description">
+                            <div class="room-selection__description__text-container">
+                                <a class="room-selection__description__text-container__name"
+                                    href="room-details.html">Minimal Duplex Room</a>
+                                <p class="room-selection__description__text-container__mini-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore.
+                                </p>
+                            </div>
+                            <p class="room-selection__description__price">
+                                $345<span class="room-selection__description__price__per-night">/Night</span>
+                            </p>
+                        </div>
+                    </article>
                 </div>
-                <img src="assets/images/placeholder-image.png" alt="">
-                <h3>Minimal Duplex Room</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore.</p>
-                <p>$345/Night</p>
-                <button>Book Now</button>
-            </article>
-            <article>
-                <div>
-                    <img src="assets/icons/room-icons-black/bed.png" alt="">
-                    <img src="assets/icons/room-icons-black/wifi.png" alt="">
-                    <img src="assets/icons/room-icons-black/car.png" alt="">
-                    <img src="assets/icons/room-icons-black/heater.png" alt="">
-                    <img src="assets/icons/room-icons-black/gym.png" alt="">
-                    <img src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                    <img src="assets/icons/room-icons-black/bar.png" alt="">
-                </div>
-                <img src="assets/images/placeholder-image.png" alt="">
-                <h3>Minimal Duplex Room</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore.</p>
-                <p>$345/Night</p>
-                <button>Book Now</button>
-            </article>
-            <article>
-                <div>
-                    <img src="assets/icons/room-icons-black/bed.png" alt="">
-                    <img src="assets/icons/room-icons-black/wifi.png" alt="">
-                    <img src="assets/icons/room-icons-black/car.png" alt="">
-                    <img src="assets/icons/room-icons-black/heater.png" alt="">
-                    <img src="assets/icons/room-icons-black/gym.png" alt="">
-                    <img src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                    <img src="assets/icons/room-icons-black/bar.png" alt="">
-                </div>
-                <img src="assets/images/placeholder-image.png" alt="">
-                <h3>Minimal Duplex Room</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore.</p>
-                <p>$345/Night</p>
-                <button>Book Now</button>
-            </article>
-            <article>
-                <div>
-                    <img src="assets/icons/room-icons-black/bed.png" alt="">
-                    <img src="assets/icons/room-icons-black/wifi.png" alt="">
-                    <img src="assets/icons/room-icons-black/car.png" alt="">
-                    <img src="assets/icons/room-icons-black/heater.png" alt="">
-                    <img src="assets/icons/room-icons-black/gym.png" alt="">
-                    <img src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                    <img src="assets/icons/room-icons-black/bar.png" alt="">
-                </div>
-                <img src="assets/images/placeholder-image.png" alt="">
-                <h3>Minimal Duplex Room</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore.</p>
-                <p>$345/Night</p>
-                <button>Book Now</button>
-            </article>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </section>
 
         <section class="video-presentation-container">
             <h4 class="video-presentation-container__subtitle">Intro video</h4>
             <h2 class="video-presentation-container__title">Meet With Our Luxury Place.</h2>
-            <p class="video-presentation-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <p class="video-presentation-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
             <iframe class="video-presentation-container__video" width="560" height="315"
@@ -177,143 +272,175 @@
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <a class="video-presentation-container__learn-more" href="about.html">Learn More</a>
         </section>
 
-        <section class="facilities">
-            <h4 class="facilities__subtitle">Facilities</h4>
-            <h2 class="facilities__title">Core Features</h2>
-            <ul class="facilities__features-list">
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">01</p>
-                    <img class="facilities__features-list__feature__icon" src="assets/icons/facilities/raiting.png"
-                        alt="">
-                    <h3 class="facilities__features-list__feature__title">Have High Rating</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">02</p>
-                    <img class="facilities__features-list__feature__icon" src="assets/icons/facilities/quiet-hours.png"
-                        alt="">
-                    <h3 class="facilities__features-list__feature__title">Quiet Hours</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">03</p>
-                    <img class="facilities__features-list__feature__icon" src="assets/icons/facilities/location.png"
-                        alt="">
-                    <h3 class="facilities__features-list__feature__title">Best Locations</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">04</p>
-                    <img class="facilities__features-list__feature__icon"
-                        src="assets/icons/facilities/free-cancelation.png" alt="">
-                    <h3 class="facilities__features-list__feature__title">Free Cancellation</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">05</p>
-                    <img class="facilities__features-list__feature__icon" src="assets/icons/facilities/payment.png"
-                        alt="">
-                    <h3 class="facilities__features-list__feature__title">Payment Options</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">06</p>
-                    <img class="facilities__features-list__feature__icon" src="assets/icons/facilities/offers.png"
-                        alt="">
-                    <h3 class="facilities__features-list__feature__title">Special Offers</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-            </ul>
+        <section class="facilities-section">
+            <h4 class="facilities-section__subtitle">Facilities</h4>
+            <h2 class="facilities-section__title">Core Features</h2>
+
+
+            <div class="swiper features-list-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide feature">
+                        <p class="feature__number">01</p>
+                        <img class="feature__icon" src="assets/icons/facilities/raiting.png" alt="">
+                        <h3 class="feature__title">Have High Rating</h3>
+                        <p class="feature__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide feature">
+                        <p class="feature__number">02</p>
+                        <img class="feature__icon" src="assets/icons/facilities/quiet-hours.png" alt="">
+                        <h3 class="feature__title">Quiet Hours</h3>
+                        <p class="feature__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide feature">
+                        <p class="feature__number">03</p>
+                        <img class="feature__icon" src="assets/icons/facilities/location.png" alt="">
+                        <h3 class="feature__title">Best Locations</h3>
+                        <p class="feature__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide feature">
+                        <p class="feature__number">04</p>
+                        <img class="feature__icon" src="assets/icons/facilities/free-cancelation.png" alt="">
+                        <h3 class="feature__title">Free Cancellation</h3>
+                        <p class="feature__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide feature">
+                        <p class="feature__number">05</p>
+                        <img class="feature__icon" src="assets/icons/facilities/payment.png" alt="">
+                        <h3 class="feature__title">Payment Options</h3>
+                        <p class="feature__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide feature">
+                        <p class="feature__number">06</p>
+                        <img class="feature__icon" src="assets/icons/facilities/offers.png" alt="">
+                        <h3 class="feature__title">Special Offers</h3>
+                        <p class="feature__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
 
         <section class="menu">
-            <img src="assets/icons/home-page/menu/donut.png" alt="">
+            <img class="menu__donut-image" src="assets/icons/home-page/menu/donut.png" alt="">
             <h4 class="menu__subtitle">Menu</h4>
             <h2 class="menu__title">Our Foods Menu</h2>
-            <button class="menu__button menu__button--left">&lt;</button>
-            <button class="menu__button menu__button--right">&gt;</button>
-            <ul class="menu__food-list">
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Eggs & Bacon</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
-                </li>
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Fruit Parfait</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
-                </li>
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Cheese Plate</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
-                </li>
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Tea or Coffee</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
-                </li>
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Marmalade Selection</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
-                </li>
-                <li class="menu__food-list__item">
-                    <a class="menu__food-list__item__link" href="#">
-                        <img class="menu__food-list__item__link__image" src="assets/images/placeholder-image.png"
-                            alt="">
-                        <h3 class="menu__food-list__item__link__title">Chia Oatmeal</h3>
-                        <p class="menu__food-list__item__link__text">Lorem ipsum dolor sit amet, consectetur adip
-                            isicing elit, sed do eiusmod tempor.</p>
-                        <img class="menu__food-list__item__link__hidden-arrow" src="assets/icons/home-page/menu/arrow.png" alt="">
-                    </a>
-                </li>
-            </ul>
+
+
+            <!-- Slider main container -->
+            <div class="swiper food-list-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <ul class="swiper-slide food-list">
+                        <li class="food">
+                            <a class="food__link" href="#">
+                                <img class="food__link__image" src="assets/images/placeholder-image.png" alt="">
+                                <div class="food__link__text-container">
+                                    <h3 class="food__link__text-container__title">Fruit Parfait</h3>
+                                    <p class="food__link__text-container__text">Lorem ipsum dolor sit amet, consectetur
+                                        adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                    <img class="food__link__text-container__hidden-arrow"
+                                        src="assets/icons/home-page/menu/arrow.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a class="food__link" href="#">
+                                <img class="food__link__image" src="assets/images/placeholder-image.png" alt="">
+                                <div class="food__link__text-container">
+                                    <h3 class="food__link__text-container__title">Marmalade Selection</h3>
+                                    <p class="food__link__text-container__text">Lorem ipsum dolor sit amet, consectetur
+                                        adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                    <img class="food__link__text-container__hidden-arrow"
+                                        src="assets/icons/home-page/menu/arrow.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a class="food__link" href="#">
+                                <img class="food__link__image" src="assets/images/placeholder-image.png" alt="">
+                                <div class="food__link__text-container">
+                                    <h3 class="food__link__text-container__title">Cheese Plate</h3>
+                                    <p class="food__link__text-container__text">Lorem ipsum dolor sit amet, consectetur
+                                        adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                    <img class="food__link__text-container__hidden-arrow"
+                                        src="assets/icons/home-page/menu/arrow.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="swiper-slide food-list">
+                        <li class="food">
+                            <a class="food__link" href="#">
+                                <img class="food__link__image" src="assets/images/placeholder-image.png" alt="">
+                                <div class="food__link__text-container">
+                                    <h3 class="food__link__text-container__title">Eggs & Bacon</h3>
+                                    <p class="food__link__text-container__text">Lorem ipsum dolor sit amet, consectetur
+                                        adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                    <img class="food__link__text-container__hidden-arrow"
+                                        src="assets/icons/home-page/menu/arrow.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a class="food__link" href="#">
+                                <img class="food__link__image" src="assets/images/placeholder-image.png" alt="">
+                                <div class="food__link__text-container">
+                                    <h3 class="food__link__text-container__title">Tea or Coffee</h3>
+                                    <p class="food__link__text-container__text">Lorem ipsum dolor sit amet, consectetur
+                                        adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                    <img class="food__link__text-container__hidden-arrow"
+                                        src="assets/icons/home-page/menu/arrow.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a class="food__link" href="#">
+                                <img class="food__link__image" src="assets/images/placeholder-image.png" alt="">
+                                <div class="food__link__text-container">
+                                    <h3 class="food__link__text-container__title">Chia Oatmeal</h3>
+                                    <p class="food__link__text-container__text">Lorem ipsum dolor sit amet, consectetur
+                                        adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                    <img class="food__link__text-container__hidden-arrow"
+                                        src="assets/icons/home-page/menu/arrow.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
         </section>
 
         <section class="hotel-images">
@@ -329,7 +456,8 @@
                 <p class="satisfaction__archievement__subtitle">Projects are Completed</p>
             </article>
             <article class="satisfaction__archievement">
-                <img class="satisfaction__archievement__image" src="assets/icons/home-page/numbers/employees.png" alt="">
+                <img class="satisfaction__archievement__image" src="assets/icons/home-page/numbers/employees.png"
+                    alt="">
                 <h2 class="satisfaction__archievement__title">10M<span>+</span></h2>
                 <p class="satisfaction__archievement__subtitle">Active Backers Around World</p>
             </article>
@@ -429,7 +557,7 @@
         <div class="footer__bottom-container">
             <p class="footer__bottom-container__text">Copyright By@Example - 2020</p>
             <p class="footer__bottom-container__text">
-                <a href="#" class="footer__bottom-container__text__link">Terms of Use</a> | 
+                <a href="#" class="footer__bottom-container__text__link">Terms of Use</a> |
                 <a href="#" class="footer__bottom-container__text__link">Privacy Environmental Policy</a>
             </p>
         </div>

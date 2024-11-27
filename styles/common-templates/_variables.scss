@@ -1,0 +1,15 @@
+$color-gris: #777777;
+$color-negro: #111111;
+$color-blanco: #ffffff;
+$color-caqui: #BDAC8D;
+$color-gris-claro: #BDBDBD;
+$color-blanco-roto: #F9F9F9;
+$color-oscuro: #222222;
+$color-gris-oscuro: #333333;
+$color-gris-roto: #C2C2C2;
+
+@mixin section-title{
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: -.15rem;
+}

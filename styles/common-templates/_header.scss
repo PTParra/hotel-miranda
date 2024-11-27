@@ -1,0 +1,75 @@
+.header{
+    position: relative;
+    &__title{
+        display: none;
+    }
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    filter: drop-shadow(#00000060 0 0 3px);
+    z-index: 50;
+    &__hamburger-button{
+        background-color: transparent;
+        border: none;
+        display: block;
+        &__image{
+            display: block;
+            width: 24px;
+        }
+    }
+
+    &__logo{
+        display: inline-block;
+        background-color: $color-blanco;
+        color: $color-negro;
+        text-transform: uppercase;
+        &__letter{
+            @include archivo-font;
+            padding: .4rem .8rem;
+            display: inline-block;
+            background-color: white;
+            filter: drop-shadow(#8B8B8B60 0 0 10px);
+            font-size: 2rem;
+            vertical-align: middle;
+            margin-right: .5rem;
+        }
+
+        &__text-container{
+            @include roboto-font;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1rem;
+            letter-spacing: .15rem;
+            &__title{
+                font-weight: 700;
+            }
+        }
+        width: 55%;
+    }
+
+    .links-container{
+        display: none;
+    }
+
+    &__buttons{
+        &__button{
+            display: inline-block;
+            vertical-align: middle;
+            &__image{
+                display: block;
+                width: 25px;
+            }
+    
+            &--user{
+                margin-right: 1.2rem;
+            }
+        }
+    }
+}

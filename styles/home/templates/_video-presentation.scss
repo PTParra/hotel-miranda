@@ -1,0 +1,48 @@
+.video-presentation-container{
+    background-color: $color-oscuro;
+    padding: 3rem 1.5rem;
+    margin-bottom: 3.75rem;
+    
+    &__subtitle{
+        color: $color-caqui;
+        @include archivo-font;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: .9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__title{
+        @include old-standard-font;
+        @include section-title;
+        color: white;
+        width: 80%;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text{
+        @include archivo-font;
+        color: $color-gris-roto;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__video{
+        width: 100%;
+        margin-bottom: 2.25rem;
+    }
+
+    &__learn-more{
+        @include archivo-font;
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        padding: 1.4rem 2.5rem;
+        letter-spacing: .2rem;
+        background-color: $color-caqui
+    }
+}
