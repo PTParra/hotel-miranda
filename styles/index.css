@@ -1611,4 +1611,52 @@ body {
 .popular-rooms .popular-rooms-swiper .swiper-button-prev::after, .popular-rooms .popular-rooms-swiper .swiper-button-next::after {
   font-size: 0.7rem;
   color: #111111;
+}
+
+.info {
+  margin-top: 2rem;
+}
+.info__media {
+  padding: 0 2rem;
+}
+.info__media__contact-media {
+  position: relative;
+  padding: 1rem 0;
+  aspect-ratio: 4/3;
+}
+.info__media__contact-media__image {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1.5rem;
+}
+.info__media__contact-media__number {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10rem;
+  font-weight: 700;
+  color: #F9F9F9;
+  z-index: -1;
+}
+.info__media__contact-media__text {
+  display: inline-block;
+  width: 75%;
+}
+.info__media__contact-media__text__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.info__media__contact-media__text__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  color: #777777;
+  text-decoration: none;
+}
+.info__map {
+  width: 100%;
+  padding: 0 1rem;
+  aspect-ratio: 16/9;
 }/*# sourceMappingURL=index.css.map */
