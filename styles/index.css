@@ -27,7 +27,7 @@ body {
   background-color: #ffffff;
   padding: 1rem 1.5rem;
   filter: drop-shadow(rgba(0, 0, 0, 0.3764705882) 0 0 3px);
-  z-index: 50;
+  z-index: 10;
 }
 .navbar__hamburger-button {
   background-color: transparent;
@@ -56,7 +56,7 @@ body {
   margin-right: 0.5rem;
 }
 .navbar__logo__text-container {
-  font-family: "Roboto", sans-serif;
+  font-family: "Archivo", sans-serif;
   display: inline-block;
   vertical-align: middle;
   font-size: 1rem;
@@ -65,8 +65,18 @@ body {
 .navbar__logo__text-container__title {
   font-weight: 700;
 }
-.navbar .links-container {
+.navbar__links-container {
   display: none;
+  list-style: none;
+}
+.navbar__links-container__link {
+  margin-bottom: 1.5rem;
+}
+.navbar__links-container__link__text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #222222;
 }
 .navbar__buttons__button {
   display: inline-block;
@@ -78,6 +88,26 @@ body {
 }
 .navbar__buttons__button--user {
   margin-right: 1.2rem;
+}
+
+.show-links {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  filter: drop-shadow(rgba(139, 139, 139, 0.3764705882) 0 0 10px);
+}
+
+.x-icon {
+  padding: 0.28rem;
+}
+.x-icon img {
+  width: 15px;
 }
 
 .front {
@@ -99,7 +129,7 @@ body {
 }
 .front__banner__title {
   font-family: "Old Standard TT", serif;
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 400;
   letter-spacing: -0.15rem;
   margin-bottom: 1rem;
@@ -164,6 +194,132 @@ body {
   margin-top: 1rem;
 }
 
+.footer {
+  background-image: url("../assets/images/background-footer.png");
+  background-blend-mode: soft-light;
+}
+.footer__top-container {
+  padding: 1.5rem 1.5rem;
+}
+.footer__top-container__hotel {
+  margin-bottom: 2rem;
+}
+.footer__top-container__hotel__logo {
+  display: inline-block;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.footer__top-container__hotel__logo__letter {
+  font-family: "Archivo", sans-serif;
+  padding: 1rem 1.4rem;
+  display: inline-block;
+  background-color: #BDAC8D;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: 1.3rem;
+}
+.footer__top-container__hotel__logo__text-container {
+  font-family: "Archivo", sans-serif;
+  color: #111111;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+.footer__top-container__hotel__logo__text-container__title {
+  font-weight: 700;
+}
+.footer__top-container__hotel__text {
+  font-family: "Archivo", sans-serif;
+  line-height: 1.5rem;
+  color: #777777;
+  margin-bottom: 2rem;
+}
+.footer__top-container__hotel__socials__link {
+  display: inline-block;
+  background-color: #F9F9F9;
+  padding: 0.5rem;
+  margin-right: 0.6rem;
+}
+.footer__top-container__hotel__socials__link__icon {
+  vertical-align: middle;
+}
+.footer__top-container__hotel__socials__link--active {
+  background-color: #BDAC8D;
+}
+.footer__top-container__services {
+  margin-bottom: 0.5rem;
+}
+.footer__top-container__services__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.footer__top-container__services__list-container {
+  display: flex;
+  gap: 1rem;
+}
+.footer__top-container__services__list-container__list {
+  list-style: none;
+}
+.footer__top-container__services__list-container__list .list-item {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin-bottom: 1.5rem;
+}
+.footer__top-container__contact-info__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.footer__top-container__contact-info__media {
+  margin-bottom: 3.5rem;
+}
+.footer__top-container__contact-info__media .media__image {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+.footer__top-container__contact-info__media .media__data {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer__top-container__contact-info__media .media__data__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.footer__top-container__contact-info__media .media__data__text {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.footer__bottom-container {
+  padding: 1.5rem 1.5rem;
+  background-color: #F9F9F9;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02rem;
+}
+.footer__bottom-container__text {
+  margin-bottom: 1.5rem;
+  color: #222222;
+}
+.footer__bottom-container__links-container {
+  word-spacing: 0.8rem;
+}
+.footer__bottom-container__links-container__link {
+  word-spacing: normal;
+  color: #222222;
+  text-decoration: none;
+}
+
 .about-section {
   margin-top: 3.75rem;
   margin-bottom: 2.5rem;
@@ -184,7 +340,7 @@ body {
 }
 .about-section__text-container__title {
   font-family: "Old Standard TT", serif;
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 400;
   letter-spacing: -0.15rem;
   color: #111111;
@@ -273,7 +429,7 @@ body {
   text-align: center;
 }
 .rooms-section__title {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 400;
   letter-spacing: -0.15rem;
   font-family: "Old Standard TT", serif;
@@ -373,7 +529,7 @@ body {
 }
 .video-presentation-container__title {
   font-family: "Old Standard TT", serif;
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 400;
   letter-spacing: -0.15rem;
   color: #ffffff;
@@ -418,7 +574,7 @@ body {
   margin-bottom: 1rem;
 }
 .facilities-section__title {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 400;
   letter-spacing: -0.15rem;
   font-family: "Old Standard TT", serif;
@@ -485,7 +641,7 @@ body {
   margin-bottom: 1.5rem;
 }
 .menu__title {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 400;
   letter-spacing: -0.15rem;
   font-family: "Old Standard TT", serif;
