@@ -227,7 +227,7 @@ body {
   margin-bottom: 2rem;
 }
 .front__availability__field__date-input::-webkit-inner-spin-button, .front__availability__field__date-input::-webkit-calendar-picker-indicator {
-  background-image: url("../../assets/icons/home-page/calendar.png");
+  background-image: url("../assets/icons/home-page/calendar.png");
   position: absolute;
   left: 0;
   font-size: 1.1rem;
