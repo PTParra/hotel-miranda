@@ -34,7 +34,7 @@
         &__link{
             display: inline-block;
             @include archivo-font;
-            color: white;
+            color: $color-blanco;
             text-decoration: none;
             background-color: $color-caqui;
             font-size: 0.9rem;
@@ -89,7 +89,7 @@
 
                 &--dark-bg{
                     background-color: $color-oscuro;
-                    color: white;
+                    color: $color-blanco;
                 }
             }
 

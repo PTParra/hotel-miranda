@@ -24,7 +24,7 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: #ffffff;
   padding: 1rem 1.5rem;
   filter: drop-shadow(rgba(0, 0, 0, 0.3764705882) 0 0 3px);
   z-index: 50;
@@ -49,7 +49,7 @@ body {
   font-family: "Archivo", sans-serif;
   padding: 0.4rem 0.8rem;
   display: inline-block;
-  background-color: white;
+  background-color: #ffffff;
   filter: drop-shadow(rgba(139, 139, 139, 0.3764705882) 0 0 10px);
   font-size: 2rem;
   vertical-align: middle;
@@ -85,7 +85,7 @@ body {
 }
 .front__banner {
   padding: 3rem 1rem;
-  color: white;
+  color: #ffffff;
 }
 .front__banner__subtitle {
   font-family: "Archivo", sans-serif;
@@ -110,7 +110,7 @@ body {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   display: inline-block;
   border: 2px solid rgba(255, 255, 255, 0.3294117647);
   padding: 1.4rem 2.5rem;
@@ -129,7 +129,7 @@ body {
 .front__availability__label {
   display: block;
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 1.2rem;
 }
@@ -155,7 +155,7 @@ body {
   font-family: "Archivo", sans-serif;
   border: none;
   background-color: #BEAD8E;
-  color: white;
+  color: #ffffff;
   padding: 1.4rem 2rem;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -200,7 +200,7 @@ body {
 .about-section__text-container__link {
   display: inline-block;
   font-family: "Archivo", sans-serif;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   background-color: #BDAC8D;
   font-size: 0.9rem;
@@ -253,7 +253,7 @@ body {
 }
 .about-section__images-container__column__text-container--dark-bg {
   background-color: #222222;
-  color: white;
+  color: #ffffff;
 }
 .about-section__images-container__column--lower-height {
   margin: 0;
@@ -300,7 +300,7 @@ body {
   display: inline-flex;
   gap: 1rem;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
   position: relative;
 }
 .rooms-section__swiper .room-selection__description {
@@ -309,7 +309,7 @@ body {
   width: 90%;
   margin: 0 auto;
   margin-top: -1.5rem;
-  background-color: white;
+  background-color: #ffffff;
   position: relative;
   padding: 1rem 2rem;
 }
@@ -347,11 +347,11 @@ body {
 }
 .rooms-section__swiper .swiper-button-prev {
   left: 3%;
-  background-color: white;
+  background-color: #ffffff;
 }
 .rooms-section__swiper .swiper-button-next {
   right: 3%;
-  background-color: white;
+  background-color: #ffffff;
 }
 .rooms-section__swiper .swiper-button-prev::after, .rooms-section__swiper .swiper-button-next::after {
   font-size: 0.7rem;
@@ -376,7 +376,7 @@ body {
   font-size: 3.5rem;
   font-weight: 400;
   letter-spacing: -0.15rem;
-  color: white;
+  color: #ffffff;
   width: 80%;
   margin-bottom: 1.5rem;
 }
@@ -397,7 +397,7 @@ body {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   display: inline-block;
   padding: 1.4rem 2.5rem;
   letter-spacing: 0.2rem;
@@ -549,6 +549,9 @@ body {
   font-size: 0.7rem;
 }
 
+.hotel-images-swiper {
+  margin-bottom: 2.75rem;
+}
 .hotel-images-swiper .swiper-slide {
   padding: 2rem 1rem;
 }
@@ -558,4 +561,34 @@ body {
 }
 .hotel-images-swiper .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #BDAC8D;
+}
+
+.satisfaction {
+  background-color: #222222;
+  padding: 3rem 0;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+.satisfaction__archievement {
+  margin-bottom: 3.75rem;
+  font-family: "Roboto", sans-serif;
+}
+.satisfaction__archievement__image {
+  margin-bottom: 1rem;
+}
+.satisfaction__archievement__number {
+  color: #ffffff;
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin-bottom: -0.5rem;
+}
+.satisfaction__archievement__number__sign {
+  font-size: 1rem;
+}
+.satisfaction__archievement__name {
+  color: #999999;
+  font-weight: 700;
+}
+.satisfaction__archievement--last {
+  margin-bottom: 0;
 }/*# sourceMappingURL=index.css.map */
