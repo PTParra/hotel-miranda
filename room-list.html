@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Miranda</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/header.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -12,28 +17,28 @@
         <p class="header__title">We Make Your Feel Comfortable</p>
     </header>
     <nav class="navbar">
-        <button type="button" class="navbar__hamburger-button">
+        <button type="button" class="navbar__hamburger-button" id="menu-hamburguesa">
             <img class="navbar__hamburger-button__image" src="assets/icons/navbar/open-menu.png" alt="">
         </button>
         <a class="navbar__logo" href="index.html">
             <p class="navbar__logo__letter">H</p>
             <div class="navbar__logo__text-container">
-                <h3 class="navbar__logo__text-container__title">Hotel</h3>
+                <h3 class="navbar__logo__text-container__title navbar__logo__text-container__title--home">Hotel</h3>
                 <p class="navbar__logo__text-container__subtitle">Miranda</p>
             </div>
         </a>
-        <ul class="links-container">
-            <li class="links-container__link">
-                <a class="links-container__link__text" href="about.html">About Us</a>
+        <ul class="navbar__links-container" id="lista-enlaces">
+            <li class="navbar__links-container__link">
+                <a class="navbar__links-container__link__text" href="about.html">About Us</a>
             </li>
-            <li class="links-container__link">
-                <a class="links-container__link__text" href="room-list.html">Rooms</a>
+            <li class="navbar__links-container__link">
+                <a class="navbar__links-container__link__text" href="room-list.html">Rooms</a>
             </li>
-            <li class="links-container__link">
-                <a class="links-container__link__text" href="offers.html">Offers</a>
+            <li class="navbar__links-container__link">
+                <a class="navbar__links-container__link__text" href="offers.html">Offers</a>
             </li>
-            <li class="links-container__link">
-                <a class="links-container__link__text" href="contact.html">Contact</a>
+            <li class="navbar__links-container__link">
+                <a class="navbar__links-container__link__text" href="contact.html">Contact</a>
             </li>
         </ul>
         <div class="navbar__buttons">
@@ -46,15 +51,18 @@
         </div>
     </nav>
     <main class="main">
-        <p class="main__identifier">
-            Home | <span class="main__identifier__section">Rooms</span>
-        </p>
-
+        
         <section class="front">
             <article class="front__banner">
                 <h3 class="front__banner__subtitle">The Ultimate Luxury</h3>
                 <h1 class="front__banner__title">Ultimate Room</h1>
             </article>
+        </section>
+
+        <section class="identifier">
+            <p class="identifier__text">
+                Home | <span class="identifier__text__section">Rooms</span>
+            </p>
         </section>
 
         <section class="rooms">
@@ -381,64 +389,66 @@
                     nisi.</p>
                 <div class="footer__top-container__hotel__socials">
                     <a href="#" class="footer__top-container__hotel__socials__link">
-                        <img src="assets/icons/footer/facebook.png" alt="Facebook">
+                        <img class="footer__top-container__hotel__socials__link__icon" src="assets/icons/footer/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="footer__top-container__hotel__socials__link footer__top-container__hotel__socials__link--active">
+                        <img class="footer__top-container__hotel__socials__link__icon" src="assets/icons/footer/twitter.png" alt="Twitter">
                     </a>
                     <a href="#" class="footer__top-container__hotel__socials__link">
-                        <img src="assets/icons/footer/twitter.png" alt="Twitter">
+                        <img class="footer__top-container__hotel__socials__link__icon" src="assets/icons/footer/behance.png" alt="Behance">
                     </a>
                     <a href="#" class="footer__top-container__hotel__socials__link">
-                        <img src="assets/icons/footer/behance.png" alt="Behance">
+                        <img class="footer__top-container__hotel__socials__link__icon" src="assets/icons/footer/linkedin.png" alt="Linkedin">
                     </a>
                     <a href="#" class="footer__top-container__hotel__socials__link">
-                        <img src="assets/icons/footer/linkedin.png" alt="Linkedin">
-                    </a>
-                    <a href="#" class="footer__top-container__hotel__socials__link">
-                        <img src="assets/icons/footer/youtube.png" alt="Youtube">
+                        <img class="footer__top-container__hotel__socials__link__icon" src="assets/icons/footer/youtube.png" alt="Youtube">
                     </a>
                 </div>
             </div>
             <div class="footer__top-container__services">
-                <h3 class="footer__top-container__services__title">Services</h3>
-                <ul class="footer__top-container__services__list">
-                    <li class="footer__top-container__services__list__item">+ Restaurant & Bar</li>
-                    <li class="footer__top-container__services__list__item">+ Swimming Pool</li>
-                    <li class="footer__top-container__services__list__item">+ Wellness & Spa</li>
-                    <li class="footer__top-container__services__list__item">+ Restaurant</li>
-                    <li class="footer__top-container__services__list__item">+ Conference Room</li>
-                    <li class="footer__top-container__services__list__item">+ Cocktail Party House</li>
-                </ul>
-                <ul class="footer__top-container__services__list">
-                    <li class="footer__top-container__services__list__item">+ Gaming Zone</li>
-                    <li class="footer__top-container__services__list__item">+ Marriage Party</li>
-                    <li class="footer__top-container__services__list__item">+ Party Planning</li>
-                    <li class="footer__top-container__services__list__item">+ Tour Consultancy</li>
-                </ul>
+                <h3 class="footer__top-container__services__title">Services.</h3>
+                <div class="footer__top-container__services__list-container">
+                    <ul class="footer__top-container__services__list-container__list">
+                        <li class="list-item">+ Restaurant & Bar</li>
+                        <li class="list-item">+ Swimming Pool</li>
+                        <li class="list-item">+ Wellness & Spa</li>
+                        <li class="list-item">+ Restaurant</li>
+                        <li class="list-item">+ Conference Room</li>
+                        <li class="list-item">+ Cocktail Party House</li>
+                    </ul>
+                    <ul class="footer__top-container__services__list-container__list">
+                        <li class="list-item">+ Gaming Zone</li>
+                        <li class="list-item">+ Marriage Party</li>
+                        <li class="list-item">+ Party Planning</li>
+                        <li class="list-item">+ Tour Consultancy</li>
+                    </ul>
+                </div>
             </div>
             <div class="footer__top-container__contact-info">
                 <h3 class="footer__top-container__contact-info__title">Contact Us</h3>
                 <div class="footer__top-container__contact-info__media">
-                    <img class="contact-info__media__image" src="assets/icons/footer/phone.png" alt="">
-                    <div class="contact-info__media__data">
-                        <h3 class="contact-info__media__data__title">Phone Number</h3>
-                        <a class="contact-info__media__data__text" href="tel:+34675850515">
+                    <img class="media__image" src="assets/icons/footer/phone.png" alt="">
+                    <div class="media__data">
+                        <h3 class="media__data__title">Phone Number</h3>
+                        <a class="media__data__text" href="tel:+34675850515">
                             +34 675 85 05 15
                         </a>
                     </div>
                 </div>
                 <div class="footer__top-container__contact-info__media">
-                    <img class="contact-info__media__image" src="assets/icons/footer/mail.png" alt="">
-                    <div class="contact-info__media__data">
-                        <h3 class="contact-info__media__data__title">Email</h3>
-                        <a class="contact-info__media__data__text" href="mailto:patriciotristante1999@gmail.com">
+                    <img class="media__image" src="assets/icons/footer/mail.png" alt="">
+                    <div class="media__data">
+                        <h3 class="media__data__title">Email</h3>
+                        <a class="media__data__text" href="mailto:patriciotristante1999@gmail.com">
                             patriciotristante1999@gmail.com
                         </a>
                     </div>
                 </div>
                 <div class="footer__top-container__contact-info__media">
-                    <img class="contact-info__media__image" src="assets/icons/footer/location-footer.png" alt="">
-                    <div class="contact-info__media__data">
-                        <h3 class="contact-info__media__data__title">Location</h3>
-                        <p class="contact-info__media__data__text">
+                    <img class="media__image" src="assets/icons/footer/location-footer.png" alt="">
+                    <div class="media__data">
+                        <h3 class="media__data__title">Location</h3>
+                        <p class="media__data__text">
                             Calle Princesa 31, planta 2 28008 Madrid
                         </p>
                     </div>
@@ -447,9 +457,9 @@
         </div>
         <div class="footer__bottom-container">
             <p class="footer__bottom-container__text">Copyright By@Example - 2020</p>
-            <p class="footer__bottom-container__text">
-                <a href="#" class="footer__bottom-container__text__link">Terms of Use</a> | 
-                <a href="#" class="footer__bottom-container__text__link">Privacy Environmental Policy</a>
+            <p class="footer__bottom-container__links-container">
+                <a href="#" class="footer__bottom-container__links-container__link">Terms of Use</a> |
+                <a href="#" class="footer__bottom-container__links-container__link">Privacy Environmental Policy</a>
             </p>
         </div>
     </footer>

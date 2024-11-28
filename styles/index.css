@@ -320,6 +320,24 @@ body {
   text-decoration: none;
 }
 
+.identifier {
+  text-align: right;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-top: -3.1rem;
+}
+.identifier__text {
+  font-family: "Archivo", sans-serif;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  word-spacing: 0.3rem;
+}
+.identifier__text__section {
+  color: #BDAC8D;
+}
+
 .about-section {
   margin-top: 3.75rem;
   margin-bottom: 2.5rem;
@@ -747,4 +765,98 @@ body {
 }
 .satisfaction__archievement--last {
   margin-bottom: 0;
+}
+
+.about {
+  margin-top: 1.75rem;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+.about__video {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.about__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.about__buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.about__buttons-container__button {
+  aspect-ratio: 1/1;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.about__buttons-container__button .button-icon {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+.about__buttons-container__button .button-text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.about__buttons-container__button--active {
+  background-color: #BDAC8D;
+  color: #ffffff;
+}
+.about__buttons-container__button--active .button__icon {
+  width: 40%;
+}
+.about__benefit {
+  padding: 0 1rem;
+}
+.about__benefit__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.about__benefit__text-container__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+.about__benefit__text-container__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: -0.05rem;
+  margin-bottom: 1rem;
+}
+.about__benefit__text-container__text {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #777777;
+  margin-bottom: 1rem;
+}
+.about__benefit__text-container__link {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  background-color: #BDAC8D;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
 }/*# sourceMappingURL=index.css.map */
