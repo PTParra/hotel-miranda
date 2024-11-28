@@ -157,6 +157,9 @@ body {
   .navbar__buttons__button__image {
     width: 18px;
   }
+  .navbar__buttons__button--user {
+    margin-right: 0.7rem;
+  }
 }
 .front {
   background-color: #333333;
@@ -253,7 +256,7 @@ body {
   }
   .front__banner__title--home {
     font-size: 7rem;
-    width: 70%;
+    width: 53%;
   }
   .front__availability {
     text-align: center;
