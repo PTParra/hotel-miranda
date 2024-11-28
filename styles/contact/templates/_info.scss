@@ -1,0 +1,57 @@
+.info{
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    &__media{
+        padding: 0 2rem;
+
+        &__contact-media{
+            position: relative;
+            padding: 1rem 0;
+            aspect-ratio: 4 / 3;
+
+            &__image{
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 1.5rem;
+            }
+
+            &__number{
+                @include roboto-font;
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 10rem;
+                font-weight: 700;
+                color: $color-blanco-roto;
+                z-index: -1;
+            }
+
+            &__text{
+                display: inline-block;
+                width: 75%;
+
+                &__title{
+                    @include old-standard-font;
+                    font-weight: 400;
+                    font-size: 1.25rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                &__text{
+                    @include roboto-font;
+                    font-size: 0.9rem;
+                    color: $color-gris;
+                    text-decoration: none;
+                    
+                }
+            }
+
+        }
+    }
+
+    &__map{
+        width: 100%;
+        padding: 0 1rem;
+        aspect-ratio: 16 / 9;
+    }
+}

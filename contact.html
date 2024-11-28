@@ -69,6 +69,8 @@
         <section class="info">
             <div class="info__media">
                 <article class="info__media__contact-media">
+                    <img class="info__media__contact-media__image" src="assets/icons/footer/location-footer.png" alt="">
+                    <span class="info__media__contact-media__number">01</span>
                     <div class="info__media__contact-media__text">
                         <h3 class="info__media__contact-media__text__title">Hotel Address</h3>
                         <p class="info__media__contact-media__text__text">
@@ -77,6 +79,8 @@
                     </div>
                 </article>
                 <article class="info__media__contact-media">
+                    <img class="info__media__contact-media__image" src="assets/icons/footer/phone.png" alt="">
+                    <span class="info__media__contact-media__number">02</span>
                     <div class="info__media__contact-media__text">
                         <h3 class="info__media__contact-media__text__title">Phone Number</h3>
                         <a class="info__media__contact-media__text__text" href="tel:+34675850515">
@@ -85,6 +89,8 @@
                     </div>
                 </article>
                 <article class="info__media__contact-media">
+                    <img class="info__media__contact-media__image" src="assets/icons/footer/mail.png" alt="">
+                    <span class="info__media__contact-media__number">03</span>
                     <div class="info__media__contact-media__text">
                         <h3 class="info__media__contact-media__text__title">Email</h3>
                         <a class="info__media__contact-media__text__text" href="mailto:patriciotristante1999@gmail.com">
@@ -93,15 +99,41 @@
                     </div>
                 </article>
             </div>
-            <img src="assets/images/placeholder-image.png" alt="">
+            <img class="info__map" src="assets/images/placeholder-image.png" alt="">
         </section>
 
         <form class="form" action="" method="get">
-            <input class="form__text-input" type="text" name="name" id="name" placeholder="Your full name">
-            <input class="form__text-input" type="text" name="email" id="email" placeholder="Enter email address">
-            <input class="form__text-input" type="text" name="phone" id="phone" placeholder="Add phone number">
-            <input class="form__text-input" type="text" name="subject" id="subject" placeholder="Enter subject">
-            <textarea class="form__textarea-input" name="message" id="message" cols="30" rows="10" placeholder="Enter message"></textarea>
+            <label class="form__label" for="name">Full Name</label>
+            <div class="form__input">
+                <img class="form__input__icon" src="assets/icons/contact/user.png" alt="">
+                <input class="form__input__text-input" type="text" name="name" id="name" placeholder="Your full name" required>
+            </div>
+
+            <label class="form__label" for="email">Email Address</label>
+            <div class="form__input">
+                <img class="form__input__icon" src="assets/icons/contact/mail.png" alt="">
+                <input class="form__input__text-input" type="text" name="email" id="email" placeholder="Enter email address" required>
+            </div>
+
+            <label class="form__label" for="phone">Phone Number</label>
+            <div class="form__input">
+                <img class="form__input__icon" src="assets/icons/contact/phone.png" alt="">
+                <input class="form__input__text-input" type="text" name="phone" id="phone" placeholder="Add phone number">
+            </div>
+
+            <label class="form__label" for="subject"></label>
+            <div class="form__input">
+                <img class="form__input__icon" src="assets/icons/contact/book.png" alt="">
+                <input class="form__input__text-input" type="text" name="subject" id="subject" placeholder="Enter subject" required>
+            </div>
+
+            <label class="form__label" for="message"></label>
+            <div class="form__input">
+                <img class="form__input__icon" src="assets/icons/contact/pencil.png" alt="">
+                <textarea class="form__input__text-input" name="message" id="message" rows="7"
+                placeholder="Enter message" required></textarea>
+            </div>
+            
             <input class="form__submit" type="submit" value="Send">
         </form>
     </main>
