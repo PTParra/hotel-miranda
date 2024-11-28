@@ -1,0 +1,101 @@
+.rooms {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: right;
+
+    &__order-by-price {
+        @include roboto-font;
+        background-color: $color-blanco-roto;
+        border: 1px solid $color-gris-oscurecido;
+        padding: .5rem 1rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+
+    &__grid-container {
+        text-align: center;
+        padding: 0 1.5rem;
+
+        &__room {
+            padding: 1rem 0;
+            margin-bottom: .5rem;
+            &__image-link {
+                display: block;
+                margin-bottom: -2rem;
+
+                &__image {
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                }
+            }
+
+            &__room-perks {
+                padding: .8rem 1.5rem;
+                list-style: none;
+                display: inline-flex;
+                gap: 1rem;
+                align-items: center;
+                background-color: $color-blanco;
+                position: relative;
+            }
+
+            &__name {
+                display: inline-block;
+                @include old-standard-font;
+                font-size: 1.5rem;
+                font-weight: 400;
+                letter-spacing: -.05rem;
+                color: $color-negro;
+                text-decoration: none;
+                margin-bottom: .5rem;
+            }
+
+            &__description {
+                @include roboto-font;
+                color: $color-gris;
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+                padding: 0 1rem;
+            }
+
+            &__price {
+                @include archivo-font;
+                display: inline-block;
+                font-size: 1rem;
+                color: $color-caqui;
+                font-weight: 700;
+                margin-right: 1rem;
+            }
+
+            &__book-button{
+                @include archivo-font;
+                display: inline-block;
+                font-size: 1rem;
+                color: $color-gris-claro;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__pagination{
+        display: block;
+        text-align: center;
+        word-spacing: .3rem;
+        &__page{
+            display: inline-block;
+            @include roboto-font;
+            text-decoration: none;
+            color: $color-negro;
+            letter-spacing: -.05rem;
+            padding: .7rem .9rem;
+
+            &--active{
+                background-color: $color-caqui;
+                color: $color-blanco;
+            }
+        }
+    }
+}

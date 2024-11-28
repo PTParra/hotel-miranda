@@ -8,7 +8,7 @@ const swiperRooms = new Swiper('.rooms-section__swiper', {
       prevEl: '.swiper-button-prev',
     },
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false,
     },
 });
