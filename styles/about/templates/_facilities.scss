@@ -1,6 +1,7 @@
 .facilities{
     background-color: $color-oscuro;
     padding: 4rem 1rem;
+    margin-bottom: 3.5rem;
     &__subtitle{
         @include archivo-font;
         color: $color-blanco;

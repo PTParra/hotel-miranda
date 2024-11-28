@@ -1,0 +1,63 @@
+.counter{
+    padding: 0 1.5rem;
+    margin-bottom: 4rem;
+    &__subtitle{
+        @include archivo-font;
+        font-weight: 700;
+        font-size: .9rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-bottom: 1.5rem;
+        color: $color-gris;
+    }
+
+    &__title{
+        @include old-standard-font;
+        @include section-title;
+        margin-bottom: 2rem;
+    }
+
+    &__archievement-list{
+        list-style: none;
+
+        &__archievement{
+            margin-bottom: 2rem;
+            &__image{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            &__text-container{
+                display: inline-block;
+                vertical-align: middle;
+                &__title{
+                    @include old-standard-font;
+                    @include section-title;
+                }
+
+                &__subtitle{
+                    @include roboto-font;
+                    color: $color-gris;
+                }
+            }
+            &__arrow{
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__images-swiper{
+        .swiper-slide{
+            padding: 2rem 0;
+
+            .counter-image{
+                width: 100%;
+                aspect-ratio: 4 / 3;
+                object-fit: cover;
+            }
+        }
+        .swiper-pagination-bullet-active{
+                background-color: $color-caqui;
+        }
+    }
+}

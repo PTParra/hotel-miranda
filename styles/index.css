@@ -732,6 +732,8 @@ body {
 .hotel-images-swiper .swiper-slide .hotel-image {
   width: 100%;
   aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hotel-images-swiper .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #BDAC8D;
@@ -864,6 +866,7 @@ body {
 .facilities {
   background-color: #222222;
   padding: 4rem 1rem;
+  margin-bottom: 3.5rem;
 }
 .facilities__subtitle {
   font-family: "Archivo", sans-serif;
@@ -918,5 +921,66 @@ body {
   font-size: 0.9rem;
 }
 .facilities .facilities-list-swiper .swiper-pagination-bullet-active {
+  background-color: #BDAC8D;
+}
+
+.counter {
+  padding: 0 1.5rem;
+  margin-bottom: 4rem;
+}
+.counter__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  color: #777777;
+}
+.counter__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.4rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  margin-bottom: 2rem;
+}
+.counter__archievement-list {
+  list-style: none;
+}
+.counter__archievement-list__archievement {
+  margin-bottom: 2rem;
+}
+.counter__archievement-list__archievement__image {
+  display: inline-block;
+  vertical-align: middle;
+}
+.counter__archievement-list__archievement__text-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+.counter__archievement-list__archievement__text-container__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.4rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+}
+.counter__archievement-list__archievement__text-container__subtitle {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+}
+.counter__archievement-list__archievement__arrow {
+  display: inline-block;
+  vertical-align: middle;
+}
+.counter__images-swiper .swiper-slide {
+  padding: 2rem 0;
+}
+.counter__images-swiper .swiper-slide .counter-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.counter__images-swiper .swiper-pagination-bullet-active {
   background-color: #BDAC8D;
 }/*# sourceMappingURL=index.css.map */

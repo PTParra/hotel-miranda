@@ -15,3 +15,13 @@ $color-oscuro-mas-claro: #292929;
     font-weight: 400;
     letter-spacing: -.15rem;
 }
+
+@mixin archivo-font{
+    font-family: "Archivo", sans-serif;
+}
+@mixin roboto-font{
+    font-family: "Roboto", sans-serif;
+}
+@mixin old-standard-font{
+    font-family: "Old Standard TT", serif;
+}
