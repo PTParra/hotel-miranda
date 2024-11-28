@@ -323,7 +323,6 @@ body {
 .identifier {
   text-align: right;
   padding-right: 1.5rem;
-  margin-left: auto;
   margin-top: -3.1rem;
 }
 .identifier__text {
@@ -1117,6 +1116,9 @@ body {
 .room-details__description .mini-description__prices-container__price--previous {
   margin-bottom: 1rem;
 }
+.room-details__description .mini-description__prices-container__price--previous .mini-description__prices-container__price__number {
+  font-size: 1.5rem;
+}
 .room-details__description .mini-description__prices-container__price--previous .mini-description__prices-container__price__per-night, .room-details__description .mini-description__prices-container__price--previous .mini-description__prices-container__price__number {
   text-decoration: line-through;
 }
@@ -1391,6 +1393,222 @@ body {
   background-color: #ffffff;
 }
 .room-details__related-rooms .related-rooms-swiper .swiper-button-prev::after, .room-details__related-rooms .related-rooms-swiper .swiper-button-next::after {
+  font-size: 0.7rem;
+  color: #111111;
+}
+
+.offers {
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+.offers__room {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.offers__room__image-link {
+  display: block;
+}
+.offers__room__image-link__image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.offers__room__description {
+  padding: 0 1rem;
+  background-color: #ffffff;
+}
+.offers__room__description__price-name {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+.offers__room__description__price-name .room-name__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #777777;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+.offers__room__description__price-name .room-name__title {
+  font-family: "Old Standard TT", serif;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 2.25rem;
+  text-decoration: none;
+  color: #111111;
+  width: 80%;
+}
+.offers__room__description__price-name .room-prices {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  text-align: right;
+}
+.offers__room__description__price-name .room-prices__price {
+  font-family: "Archivo", sans-serif;
+  color: #BDAC8D;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.offers__room__description__price-name .room-prices__price__per-night {
+  font-size: 0.8rem;
+}
+.offers__room__description__price-name .room-prices__price--previous {
+  margin-bottom: 1rem;
+}
+.offers__room__description__price-name .room-prices__price--previous .room-prices__price__number {
+  font-size: 1.5rem;
+}
+.offers__room__description__price-name .room-prices__price--previous .room-prices__price__per-night, .offers__room__description__price-name .room-prices__price--previous .room-prices__price__number {
+  text-decoration: line-through;
+}
+.offers__room__description__price-name .room-prices__price--discount {
+  color: #DE5777;
+}
+.offers__room__description__characteristics .characteristics__text-block {
+  margin-bottom: 1.5rem;
+}
+.offers__room__description__characteristics .characteristics__text-block__description-text {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  color: #777777;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+  line-height: 1.5rem;
+}
+.offers__room__description__characteristics .characteristics__text-block__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+.offers__room__description__characteristics .characteristics__text-block__list__perk__image {
+  width: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.offers__room__description__characteristics .characteristics__text-block__list__perk__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777;
+  display: inline-block;
+  vertical-align: middle;
+}
+.offers__room__description__characteristics .characteristics__book-now {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  background-color: #BDAC8D;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+}
+
+.popular-rooms {
+  text-align: center;
+  background-color: #222222;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+.popular-rooms__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #BDAC8D;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.popular-rooms__title {
+  font-family: "Old Standard TT", serif;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 2.25rem;
+  text-decoration: none;
+  color: #ffffff;
+  width: 80%;
+}
+.popular-rooms .popular-rooms-swiper {
+  width: 90%;
+  position: relative;
+}
+.popular-rooms .popular-rooms-swiper .room {
+  text-align: center;
+}
+.popular-rooms .popular-rooms-swiper .room__image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -1.5rem;
+}
+.popular-rooms .popular-rooms-swiper .room__characteristics {
+  padding: 0.8rem 1.5rem;
+  list-style: none;
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.popular-rooms .popular-rooms-swiper .room__description {
+  transition: opacity 150ms ease-in;
+  opacity: 0;
+  width: 100%;
+  margin-top: -2.1rem;
+  background-color: #ffffff;
+  position: relative;
+  padding: 1rem 2rem;
+  padding-top: 3rem;
+}
+.popular-rooms .popular-rooms-swiper .room__description__text-container__name {
+  display: inline-block;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  color: #111111;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.popular-rooms .popular-rooms-swiper .room__description__text-container__mini-description {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.popular-rooms .popular-rooms-swiper .room__description__price {
+  font-size: 2rem;
+  color: #BDAC8D;
+  font-weight: 700;
+}
+.popular-rooms .popular-rooms-swiper .room__description__price__per-night {
+  font-size: 0.8rem;
+}
+.popular-rooms .popular-rooms-swiper .room.swiper-slide-active .room__description {
+  opacity: 1;
+}
+.popular-rooms .popular-rooms-swiper .swiper-button-prev, .popular-rooms .popular-rooms-swiper .swiper-button-next {
+  position: absolute;
+  top: 25%;
+  padding: 0 1.3rem;
+}
+.popular-rooms .popular-rooms-swiper .swiper-button-prev {
+  left: 0;
+  background-color: #ffffff;
+}
+.popular-rooms .popular-rooms-swiper .swiper-button-next {
+  right: 0;
+  background-color: #ffffff;
+}
+.popular-rooms .popular-rooms-swiper .swiper-button-prev::after, .popular-rooms .popular-rooms-swiper .swiper-button-next::after {
   font-size: 0.7rem;
   color: #111111;
 }/*# sourceMappingURL=index.css.map */
