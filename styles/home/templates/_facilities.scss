@@ -1,0 +1,65 @@
+.facilities-section{
+    margin-bottom: 4rem;
+    &__subtitle{
+        @include archivo-font;
+        font-weight: 700;
+        font-size: .9rem;
+        text-transform: uppercase;
+        color: $color-gris;
+        letter-spacing: .15rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__title{
+        @include section-title;
+        @include old-standard-font;
+        text-align: center;
+    }
+
+    .feature{
+        padding-bottom: 4rem;
+        padding-right: 4rem;
+        padding-left: 2rem;
+        padding-top: 6rem;
+        position: relative;
+        &__number{ 
+            @include archivo-font;
+            position: absolute;
+            top: 5%;
+            right: 10%;
+            font-size: 7.5rem;
+            color: #2222220A;
+            font-weight: 700;
+        }
+
+        &__icon{
+            margin-bottom: 1.75rem;
+        }
+
+        &__title{
+            @include old-standard-font;
+            font-size: 1.9rem;
+            font-weight: 400;
+            letter-spacing: -.05rem;
+        }
+
+        &__text{
+            @include archivo-font;
+            color: $color-gris;
+            line-height: 1.5rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    .features-list-swiper{
+        .swiper-pagination-bullet{
+            width: 7px;
+            height: 7px;
+        }
+
+        .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            background-color: $color-caqui;
+        }
+    }
+}

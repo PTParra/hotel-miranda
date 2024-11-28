@@ -1,0 +1,101 @@
+.about-section{
+    margin-top: 3.75rem;
+    margin-bottom: 2.5rem;
+
+    &__text-container{
+        background-color: $color-blanco-roto;
+        padding: 1.5rem;
+        padding-bottom: 8rem;
+        &__subtitle{
+            @include archivo-font;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: $color-gris;
+            letter-spacing: .2rem;
+            margin-bottom: 1.8rem;
+        }
+
+        &__title{
+            @include old-standard-font;
+            @include section-title;
+            color: $color-negro;
+            margin-bottom: 1rem;
+        }
+
+        &__text{
+            @include archivo-font;
+            color: $color-gris;
+            font-size: .9rem;
+            line-height: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        &__link{
+            display: inline-block;
+            @include archivo-font;
+            color: $color-blanco;
+            text-decoration: none;
+            background-color: $color-caqui;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .15rem;
+            padding: 1.3rem 2.5rem;
+        }
+    }
+
+    &__images-container{
+        margin-top: -5.5rem;
+        padding: 0 3rem;
+
+        &__column{
+            width: 100%;
+            margin-bottom: 2rem;
+            &__image{
+                width: 100%;
+                aspect-ratio: 4 / 4;
+                object-fit: cover;
+            }
+
+            &__text-container{
+                position: relative;
+                text-align: center;
+                padding: 4rem 0;
+                .text-container__bg-image{
+                    position: absolute;
+                    top: 15%;
+                    right: 0;
+                    opacity: .15;
+                    width: 50%;
+                }
+                .text-container__image{
+                    margin-bottom: .7rem;
+                }
+
+                .text-container__title{
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    @include old-standard-font;
+                    letter-spacing: -.1rem;
+                    margin-bottom: .7rem;
+                }
+                .text-container__text{
+                    font-size: 0.9rem;
+                    @include roboto-font;
+                    width: 70%;
+                    margin: 0 auto;
+                }
+
+                &--dark-bg{
+                    background-color: $color-oscuro;
+                    color: $color-blanco;
+                }
+            }
+
+            &--lower-height{
+                margin: 0;
+            }
+        }
+    }
+}

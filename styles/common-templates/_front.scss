@@ -1,0 +1,92 @@
+
+.front{
+    background-color: $color-gris-oscuro;
+    
+
+    &__banner{
+        padding: 3rem 1rem;
+        color: $color-blanco;
+        &__subtitle{
+            @include archivo-font;
+            font-size: .8rem;
+            font-weight: 600;
+            letter-spacing: .15rem;
+            width: 70%;
+            line-height: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+        &__title{
+            @include old-standard-font;
+            @include section-title;
+            margin-bottom: 1rem;
+        }
+
+        &__link{
+            @include archivo-font;
+            text-transform: uppercase;
+            font-size: .9rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: $color-blanco;
+            display: inline-block;
+            border: 2px solid #FFFFFF54;
+            padding: 1.4rem 2.5rem;
+            letter-spacing: .2rem;
+
+            &--tour{
+                background-color: $color-caqui;
+                border: none;
+                margin-bottom: 1.5rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &__availability{
+        padding: 3rem 1rem;
+        background-color: $color-oscuro;
+
+        &__label{
+            display: block;
+            @include roboto-font;
+            color: $color-blanco;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+
+        &__date-input{
+            display: flex;
+            position: relative;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid #BEAD8E;
+            padding: .5rem 0;
+            padding-left: 1.8rem;
+            color: $color-gris-claro;
+            margin-bottom: 2rem;
+        }
+
+        &__date-input::-webkit-inner-spin-button,
+        &__date-input::-webkit-calendar-picker-indicator {
+            content: url('../../assets/icons/home-page/calendar.png');
+            position: absolute;
+            left: 0;
+            font-size: 1.1rem;
+        }
+
+        &__submit{
+            @include archivo-font;
+            border: none;
+            background-color: #BEAD8E;
+            color: $color-blanco;
+            padding: 1.4rem 2rem;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.2rem;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+    }
+}

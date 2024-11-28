@@ -1,0 +1,93 @@
+.menu{
+    position: relative;
+    padding: 1.5rem;
+    padding-top: 7rem;
+    overflow-x: hidden;
+    &__donut-image{
+        position: absolute;
+        right: -7%;
+        top: 0;
+        width: 115px;
+    }
+
+    &__subtitle{
+        @include archivo-font;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: .15rem;
+        text-transform: uppercase;
+        color: $color-gris;
+        margin-bottom: 1.5rem;
+    }
+
+    &__title{
+        @include section-title;
+        @include old-standard-font;
+    }
+
+    .food-list{
+        list-style-type: none;
+
+        .food{
+            margin-bottom: 1rem;
+            &__link{
+                display: flex;
+                justify-content: space-between;
+                color: $color-negro;
+                text-decoration: none;
+                &__image{
+                    width: 40%;
+                    height: auto;
+                    aspect-ratio: 3 / 4;
+                    object-fit: cover;
+                }
+
+                &__text-container{
+                    width: 55%;
+                    padding: 1rem 0;
+                    padding-bottom: 0;
+                    &__title{
+                        @include old-standard-font;
+                        font-size: 1.5rem;
+                        margin-bottom: 1.5rem;
+                        font-weight: 400;
+                        letter-spacing: -.05rem;
+                    }
+
+                    &__text{
+                        @include roboto-font;
+                        font-size: 0.9rem;
+                        line-height: 1.5rem;
+                    }
+
+                    &__hidden-arrow{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .food-list-swiper{
+        padding-bottom: 5rem;
+        .swiper-button-next, .swiper-button-prev{
+            position: absolute;
+            background-color: $color-blanco-roto;
+            padding: 0 1.3rem;
+            top: 95%;
+        }
+
+        .swiper-button-next{
+            right: 0;
+        }
+
+        .swiper-button-prev{
+            left: 70%;
+        }
+
+        .swiper-button-next::after, .swiper-button-prev::after{
+            color: $color-negro;
+            font-size: .7rem;
+        }
+    }
+}
