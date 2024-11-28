@@ -7,7 +7,7 @@
     <title>Hotel Miranda</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/about.js" defer></script>
     <script src="scripts/header.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
@@ -110,68 +110,66 @@
         <section class="facilities">
             <h4 class="facilities__subtitle">Facilities</h4>
             <h2 class="facilities__title">Core Features</h2>
-            <ul class="facilities__features-list">
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">01</p>
-                    <img class="facilities__features-list__feature__icon" src="assets/icons/facilities/raiting.png"
-                        alt="">
-                    <h3 class="facilities__features-list__feature__title">Have High Rating</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">02</p>
-                    <img class="facilities__features-list__feature__icon" src="assets/icons/facilities/quiet-hours.png"
-                        alt="">
-                    <h3 class="facilities__features-list__feature__title">Quiet Hours</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">03</p>
-                    <img class="facilities__features-list__feature__icon" src="assets/icons/facilities/location.png"
-                        alt="">
-                    <h3 class="facilities__features-list__feature__title">Best Locations</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">04</p>
-                    <img class="facilities__features-list__feature__icon"
-                        src="assets/icons/facilities/free-cancelation.png" alt="">
-                    <h3 class="facilities__features-list__feature__title">Free Cancellation</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">05</p>
-                    <img class="facilities__features-list__feature__icon" src="assets/icons/facilities/payment.png"
-                        alt="">
-                    <h3 class="facilities__features-list__feature__title">Payment Options</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-                <li class="facilities__features-list__feature">
-                    <p class="facilities__features-list__feature__number">06</p>
-                    <img class="facilities__features-list__feature__icon" src="assets/icons/facilities/offers.png"
-                        alt="">
-                    <h3 class="facilities__features-list__feature__title">Special Offers</h3>
-                    <p class="facilities__features-list__feature__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna..
-                    </p>
-                </li>
-            </ul>
+            <div class="swiper facilities-list-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide facility">
+                        <p class="facility__number">01</p>
+                        <img class="facility__icon" src="assets/icons/facilities/raiting.png" alt="">
+                        <h3 class="facility__title">Have High Rating</h3>
+                        <p class="facility__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide facility">
+                        <p class="facility__number">02</p>
+                        <img class="facility__icon" src="assets/icons/facilities/quiet-hours.png" alt="">
+                        <h3 class="facility__title">Quiet Hours</h3>
+                        <p class="facility__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide facility">
+                        <p class="facility__number">03</p>
+                        <img class="facility__icon" src="assets/icons/facilities/location.png" alt="">
+                        <h3 class="facility__title">Best Locations</h3>
+                        <p class="facility__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide facility">
+                        <p class="facility__number">04</p>
+                        <img class="facility__icon" src="assets/icons/facilities/free-cancelation.png" alt="">
+                        <h3 class="facility__title">Free Cancellation</h3>
+                        <p class="facility__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide facility">
+                        <p class="facility__number">05</p>
+                        <img class="facility__icon" src="assets/icons/facilities/payment.png" alt="">
+                        <h3 class="facility__title">Payment Options</h3>
+                        <p class="facility__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide facility">
+                        <p class="facility__number">06</p>
+                        <img class="facility__icon" src="assets/icons/facilities/offers.png" alt="">
+                        <h3 class="facility__title">Special Offers</h3>
+                        <p class="facility__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
 
         <section class="counter">

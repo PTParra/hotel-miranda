@@ -859,4 +859,64 @@ body {
   color: #ffffff;
   text-decoration: none;
   padding: 1.5rem 3rem;
+}
+
+.facilities {
+  background-color: #222222;
+  padding: 4rem 1rem;
+}
+.facilities__subtitle {
+  font-family: "Archivo", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.facilities__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.4rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.facilities .facilities-list-swiper {
+  padding: 3rem 0;
+}
+.facilities .facilities-list-swiper .facility {
+  position: relative;
+  background-color: #292929;
+  padding: 2rem 1rem;
+}
+.facilities .facilities-list-swiper .facility__number {
+  font-family: "Archivo", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-size: 7.5rem;
+  color: #222222;
+  font-weight: 700;
+}
+.facilities .facilities-list-swiper .facility__icon {
+  margin-bottom: 1.75rem;
+}
+.facilities .facilities-list-swiper .facility__title {
+  font-family: "Old Standard TT", serif;
+  color: #ffffff;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+}
+.facilities .facilities-list-swiper .facility__text {
+  font-family: "Archivo", sans-serif;
+  color: #ffffff;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+.facilities .facilities-list-swiper .swiper-pagination-bullet-active {
+  background-color: #BDAC8D;
 }/*# sourceMappingURL=index.css.map */
