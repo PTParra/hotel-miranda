@@ -7,8 +7,8 @@
     <title>Hotel Miranda</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="scripts/home.js" defer></script>
     <script src="scripts/header.js" defer></script>
+    <script src="scripts/room-details.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
@@ -66,160 +66,313 @@
         </section>
 
         <section class="room-details">
-            <article class="room-details__details-container">
-                <div class="description">
-                    <div class="description__mini-description">
-                        <div class="description__mini-description">
-                            <h4 class="description__mini-description__subtitle">Double Bed</h4>
-                            <h2 class="description__mini-description__title">Luxury Double Bed</h2>
-                        </div>
-                        <p class="description__mini-description__price">$345/Night</p>
+            <div class="room-details__description">
+                <div class="mini-description">
+                    <div class="mini-description__room-name">
+                        <h4 class="mini-description__room-name__subtitle">Double Bed</h4>
+                        <h2 class="mini-description__room-name__title">Luxury Double Bed</h2>
                     </div>
-                    <img class="description__image" src="assets/images/placeholder-image.png" alt="">
-                    <p class="description__big-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis 
-                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur 
-                        magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem 
-                        ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-                        incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                    </p>
-                </div>
-                <div class="characteristics">
-                    <h2 class="characteristics__title">Amenities</h2>
-                    <ul class="characteristics__list">
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/air-conditioner.png" alt="">
-                            <p class="characteristics__list__perk__text">Air conditioner</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/wifi.png" alt="">
-                            <p class="characteristics__list__perk__text">High speed WiFi</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/locker.png" alt="">
-                            <p class="characteristics__list__perk__text">Strong Locker</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/breakfast.png" alt="">
-                            <p class="characteristics__list__perk__text">Breakfast</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/kitchen.png" alt="">
-                            <p class="characteristics__list__perk__text">Kitchen</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/security.png" alt="">
-                            <p class="characteristics__list__perk__text">Smart Security</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/cleaning.png" alt="">
-                            <p class="characteristics__list__perk__text">Cleaning</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/shower.png" alt="">
-                            <p class="characteristics__list__perk__text">Shower</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/support.png" alt="">
-                            <p class="characteristics__list__perk__text">24/7 Online Support</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/grocery.png" alt="">
-                            <p class="characteristics__list__perk__text">Grocery</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/bed.png" alt="">
-                            <p class="characteristics__list__perk__text">Single bed</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/team.png" alt="">
-                            <p class="characteristics__list__perk__text">Expert Team</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/shop.png" alt="">
-                            <p class="characteristics__list__perk__text">Shop near</p>
-                        </li>
-                        <li class="characteristics__list__perk">
-                            <img class="characteristics__list__perk__image" src="assets/icons/room-icons-khaki/towel.png" alt="">
-                            <p class="characteristics__list__perk__text">Towels</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="founder">
-                    <div class="founder__circle-photo">
-                        <img class="founder__circle-photo__image" src="assets/images/placeholder-image.png" alt="">
-                        <img class="founder__circle-photo__check" src="assets/icons/room-details-page/check.png" alt="">
-                    </div>
-                    <h2 class="founder__name">Donald H. Hilixer</h2>
-                    <h4 class="founder__title">FOUNDER, HILIX</h4>
-                    <p class="founder__description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-                    </p>
-                </div>
-                <div class="cancelation">
-                    <h2 class="cancelation__title">Cancellation</h2>
-                    <p class="cancelation__text">
-                        Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to get a full refund.
-                    </p>
-                </div>
-                <div class="related-rooms">
-                    <div class="related-rooms__room">
-                        <img class="related-rooms__room__image" src="assets/images/placeholder-image.png" alt="">
-                        <div class="related-rooms__room__room-perks">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                        </div>
-                        <h2 class="related-rooms__room__name">Minimal Duplex Room</h2>
-                        <p class="related-rooms__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <p class="related-rooms__room__price">$345/Night</p>
-                        <a href="room-details.html" class="related-rooms__room__book-button">Booking Now</a>
-                    </div>
-                    <div class="related-rooms__room">
-                        <img class="related-rooms__room__image" src="assets/images/placeholder-image.png" alt="">
-                        <div class="related-rooms__room__room-perks">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/bed.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/wifi.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/car.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/heater.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/gym.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/smoke-free.png" alt="">
-                            <img class="related-rooms__room__room-perks__perk" src="assets/icons/room-icons-black/bar.png" alt="">
-                        </div>
-                        <h2 class="related-rooms__room__name">Minimal Duplex Room</h2>
-                        <p class="related-rooms__room__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <p class="related-rooms__room__price">$345/Night</p>
-                        <a href="room-details.html" class="related-rooms__room__book-button">Booking Now</a>
+                    <div class="mini-description__prices-container">
+                        <p class="mini-description__prices-container__price">
+                            <span class="mini-description__prices-container__price__number">$345</span>
+                            <span class="mini-description__prices-container__price__per-night">/Night</span>
+                        </p>
                     </div>
                 </div>
-            </article>
-            <form class="room-details__availability-form" action="" method="get">
-                <h2 class="room-details__availability-form__title">Check Availability</h2>
-                <label class="availability-form__label" for="arrival-date">Check In</label>
-                <input class="availability-form__date-input" type="date" name="arrival-date" id="arrival-date">
-                <label class="availability-form__label" for="departure-date">Check Out</label>
-                <input class="availability-form__date-input" type="date" name="departure-date" id="departure-date">
-                <label class="availability-form__label" for="full-name">Full Name</label>
-                <input class="availability-form__text-input" type="text" name="full-name" id="full-name">
-                <label class="availability-form__label" for="email">Email</label>
-                <input class="availability-form__text-input" type="text" name="email" id="email">
-                <label class="availability-form__label" for="phone">Phone</label>
-                <input class="availability-form__number-input" type="text" name="phone" id="phone">
-                <label class="availability-form__label" for="special-request">Message (Special request)</label>
-                <textarea class="availability-form__textarea-input" name="special-request" id="special-request" cols="30" rows="10">
-                </textarea>
-                <input class="availability-form__submit" type="submit" value="Check Availability">
-            </form>
+
+                
+                <div class="room-image-and-form">
+                    <img class="room-image-and-form__image" src="assets/images/placeholder-image.png" alt="">
+                    <form class="availability-form" action="" method="get">
+                        <h2 class="availability-form__title">Check Availability</h2>
+                        <label class="availability-form__label" for="arrival-date">Check In</label>
+                        <input class="availability-form__date-input" type="date" name="arrival-date" id="arrival-date">
+                        <label class="availability-form__label" for="departure-date">Check Out</label>
+                        <input class="availability-form__date-input" type="date" name="departure-date"
+                            id="departure-date">
+                        <label class="availability-form__label" for="full-name">Full Name</label>
+                        <input class="availability-form__text-input" type="text" name="full-name" id="full-name">
+                        <label class="availability-form__label" for="email">Email</label>
+                        <input class="availability-form__text-input" type="text" name="email" id="email">
+                        <label class="availability-form__label" for="phone">Phone</label>
+                        <input class="availability-form__text-input" type="text" name="phone" id="phone">
+                        <label class="availability-form__label" for="special-request">Message (Special
+                            request)</label>
+                        <textarea class="availability-form__textarea-input" name="special-request" id="special-request"
+                            cols="30" rows="10">
+                            </textarea>
+                        <input class="availability-form__submit" type="submit" value="Check Availability">
+                    </form>
+                </div>
+                
+                <p class="room-details__description__big-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                    unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                    explicabo.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur
+                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
+            </div>
+            <div class="room-details__characteristics">
+                <h2 class="room-details__characteristics__title">Amenities</h2>
+                <ul class="room-details__characteristics__list">
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image"
+                            src="assets/icons/room-icons-khaki/air-conditioner.png" alt="">
+                        <p class="room-details__characteristics__list__perk__text">Air conditioner</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/wifi.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">High speed WiFi</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/locker.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">Strong Locker</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image"
+                            src="assets/icons/room-icons-khaki/breakfast.png" alt="">
+                        <p class="room-details__characteristics__list__perk__text">Breakfast</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/kitchen.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">Kitchen</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/security.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">Smart Security</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/cleaning.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">Cleaning</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/shower.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">Shower</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/support.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">24/7 Online Support</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/grocery.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">Grocery</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/bed.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">Single bed</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/team.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">Expert Team</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/shop.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">Shop near</p>
+                    </li>
+                    <li class="room-details__characteristics__list__perk">
+                        <img class="room-details__characteristics__list__perk__image" src="assets/icons/room-icons-khaki/towel.png"
+                            alt="">
+                        <p class="room-details__characteristics__list__perk__text">Towels</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="room-details__founder">
+                <div class="room-details__founder__circle-photo">
+                    <img class="room-details__founder__circle-photo__image" src="assets/images/placeholder-image.png" alt="">
+                    <img class="room-details__founder__circle-photo__check" src="assets/icons/room-details-page/check.png" alt="">
+                </div>
+                <h2 class="room-details__founder__name">Donald H. Hilixer</h2>
+                <h4 class="room-details__founder__title">FOUNDER, HILIX</h4>
+                <p class="room-details__founder__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore.
+                </p>
+            </div>
+            <div class="room-details__cancelation">
+                <h2 class="room-details__cancelation__title">Cancellation</h2>
+                <p class="room-details__cancelation__text">
+                    Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis,
+                    consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to
+                    14 days to get a full refund.
+                </p>
+            </div>
+            <div class="room-details__related-rooms">
+
+                <h2 class="room-details__related-rooms__title">Related Rooms</h2>
+
+                <div class="swiper related-rooms-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <article class="swiper-slide related-rooms">
+    
+                            <img class="related-rooms__image" src="assets/images/placeholder-image.png" alt="">
+                            <ul class="related-rooms__characteristics">
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/bed.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/wifi.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/car.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/heater.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/gym.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/bar.png" alt="">
+                                </li>
+                            </ul>
+                            <div class="related-rooms__description">
+                                <div class="related-rooms__description__text-container">
+                                    <a class="related-rooms__description__text-container__name"
+                                        href="room-details.html">Minimal Duplex Room</a>
+                                    <p class="related-rooms__description__text-container__mini-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore.
+                                    </p>
+                                </div>
+                                <p class="related-rooms__description__price">
+                                    $345<span class="related-rooms__description__price__per-night">/Night</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="swiper-slide related-rooms">
+    
+                            <img class="related-rooms__image" src="assets/images/placeholder-image.png" alt="">
+                            <ul class="related-rooms__characteristics">
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/bed.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/wifi.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/car.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/heater.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/gym.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/bar.png" alt="">
+                                </li>
+                            </ul>
+                            <div class="related-rooms__description">
+                                <div class="related-rooms__description__text-container">
+                                    <a class="related-rooms__description__text-container__name"
+                                        href="room-details.html">Minimal Duplex Room</a>
+                                    <p class="related-rooms__description__text-container__mini-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore.
+                                    </p>
+                                </div>
+                                <p class="related-rooms__description__price">
+                                    $345<span class="related-rooms__description__price__per-night">/Night</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="swiper-slide related-rooms">
+    
+                            <img class="related-rooms__image" src="assets/images/placeholder-image.png" alt="">
+                            <ul class="related-rooms__characteristics">
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/bed.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/wifi.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/car.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/heater.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/gym.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/smoke-free.png" alt="">
+                                </li>
+                                <li class="related-rooms__characteristics__perk">
+                                    <img class="related-rooms__characteristics__perk__icon"
+                                        src="assets/icons/room-icons-black/bar.png" alt="">
+                                </li>
+                            </ul>
+                            <div class="related-rooms__description">
+                                <div class="related-rooms__description__text-container">
+                                    <a class="related-rooms__description__text-container__name"
+                                        href="room-details.html">Minimal Duplex Room</a>
+                                    <p class="related-rooms__description__text-container__mini-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore.
+                                    </p>
+                                </div>
+                                <p class="related-rooms__description__price">
+                                    $345<span class="related-rooms__description__price__per-night">/Night</span>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                
+            </div>
         </section>
     </main>
 
@@ -239,19 +392,25 @@
                     nisi.</p>
                 <div class="footer__top-container__hotel__socials">
                     <a href="#" class="footer__top-container__hotel__socials__link">
-                        <img class="footer__top-container__hotel__socials__link__icon" src="assets/icons/footer/facebook.png" alt="Facebook">
+                        <img class="footer__top-container__hotel__socials__link__icon"
+                            src="assets/icons/footer/facebook.png" alt="Facebook">
                     </a>
-                    <a href="#" class="footer__top-container__hotel__socials__link footer__top-container__hotel__socials__link--active">
-                        <img class="footer__top-container__hotel__socials__link__icon" src="assets/icons/footer/twitter.png" alt="Twitter">
-                    </a>
-                    <a href="#" class="footer__top-container__hotel__socials__link">
-                        <img class="footer__top-container__hotel__socials__link__icon" src="assets/icons/footer/behance.png" alt="Behance">
-                    </a>
-                    <a href="#" class="footer__top-container__hotel__socials__link">
-                        <img class="footer__top-container__hotel__socials__link__icon" src="assets/icons/footer/linkedin.png" alt="Linkedin">
+                    <a href="#"
+                        class="footer__top-container__hotel__socials__link footer__top-container__hotel__socials__link--active">
+                        <img class="footer__top-container__hotel__socials__link__icon"
+                            src="assets/icons/footer/twitter.png" alt="Twitter">
                     </a>
                     <a href="#" class="footer__top-container__hotel__socials__link">
-                        <img class="footer__top-container__hotel__socials__link__icon" src="assets/icons/footer/youtube.png" alt="Youtube">
+                        <img class="footer__top-container__hotel__socials__link__icon"
+                            src="assets/icons/footer/behance.png" alt="Behance">
+                    </a>
+                    <a href="#" class="footer__top-container__hotel__socials__link">
+                        <img class="footer__top-container__hotel__socials__link__icon"
+                            src="assets/icons/footer/linkedin.png" alt="Linkedin">
+                    </a>
+                    <a href="#" class="footer__top-container__hotel__socials__link">
+                        <img class="footer__top-container__hotel__socials__link__icon"
+                            src="assets/icons/footer/youtube.png" alt="Youtube">
                     </a>
                 </div>
             </div>
