@@ -102,35 +102,38 @@
         </section>
 
         <form class="form" action="" method="get">
-            <label class="form__label" for="name">Full Name</label>
-            <div class="form__input">
-                <img class="form__input__icon" src="assets/icons/contact/user.png" alt="">
-                <input class="form__input__text-input" type="text" name="name" id="name" placeholder="Your full name" required>
-            </div>
 
-            <label class="form__label" for="email">Email Address</label>
-            <div class="form__input">
-                <img class="form__input__icon" src="assets/icons/contact/mail.png" alt="">
-                <input class="form__input__text-input" type="text" name="email" id="email" placeholder="Enter email address" required>
-            </div>
-
-            <label class="form__label" for="phone">Phone Number</label>
-            <div class="form__input">
-                <img class="form__input__icon" src="assets/icons/contact/phone.png" alt="">
-                <input class="form__input__text-input" type="text" name="phone" id="phone" placeholder="Add phone number">
-            </div>
-
-            <label class="form__label" for="subject"></label>
-            <div class="form__input">
-                <img class="form__input__icon" src="assets/icons/contact/book.png" alt="">
-                <input class="form__input__text-input" type="text" name="subject" id="subject" placeholder="Enter subject" required>
-            </div>
-
-            <label class="form__label" for="message"></label>
-            <div class="form__input">
-                <img class="form__input__icon" src="assets/icons/contact/pencil.png" alt="">
-                <textarea class="form__input__text-input" name="message" id="message" rows="7"
-                placeholder="Enter message" required></textarea>
+            <div class="form__input-grid">
+                <label class="form__label" for="name">Full Name</label>
+                <div class="form__input-grid__input">
+                    <img class="form__input-grid__input__icon" src="assets/icons/contact/user.png" alt="">
+                    <input class="form__input-grid__input__text-input" type="text" name="name" id="name" placeholder="Your full name" required>
+                </div>
+    
+                <label class="form__label" for="email">Email Address</label>
+                <div class="form__input-grid__input">
+                    <img class="form__input-grid__input__icon" src="assets/icons/contact/mail.png" alt="">
+                    <input class="form__input-grid__input__text-input" type="text" name="email" id="email" placeholder="Enter email address" required>
+                </div>
+    
+                <label class="form__label" for="phone">Phone Number</label>
+                <div class="form__input-grid__input">
+                    <img class="form__input-grid__input__icon" src="assets/icons/contact/phone.png" alt="">
+                    <input class="form__input-grid__input__text-input" type="text" name="phone" id="phone" placeholder="Add phone number">
+                </div>
+    
+                <label class="form__label" for="subject"></label>
+                <div class="form__input-grid__input">
+                    <img class="form__input-grid__input__icon" src="assets/icons/contact/book.png" alt="">
+                    <input class="form__input-grid__input__text-input" type="text" name="subject" id="subject" placeholder="Enter subject" required>
+                </div>
+    
+                <label class="form__label" for="message"></label>
+                <div class="form__input-grid__input form__input-grid__input--textarea">
+                    <img class="form__input-grid__input__icon" src="assets/icons/contact/pencil.png" alt="">
+                    <textarea class="form__input-grid__input__text-input" name="message" id="message" rows="7"
+                    placeholder="Enter message" required></textarea>
+                </div>
             </div>
             
             <input class="form__submit" type="submit" value="Send">

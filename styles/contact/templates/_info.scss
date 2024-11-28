@@ -55,3 +55,25 @@
         aspect-ratio: 16 / 9;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .info{
+        &__media{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 20% 20% 20%;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            &__contact-media{
+                aspect-ratio: auto;
+                padding: 4rem 0;
+            }
+        }
+
+        &__map{
+            width: 60%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
