@@ -1,0 +1,43 @@
+.form {
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    &__label {
+        display: none;
+    }
+
+    &__input {
+        text-align: left;
+        background-color: $color-blanco-roto;
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+
+        &__icon {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 1rem;
+        }
+
+        &__text-input {
+            @include roboto-font;
+            line-height: 1.1rem;
+            border: none;
+            background-color: transparent;
+            width: 85%;
+        }
+    }
+
+    &__submit {
+        @include archivo-font;
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        display: inline-block;
+        background-color: $color-caqui;
+        color: $color-blanco;
+        text-decoration: none;
+        padding: 1.5rem 6rem;
+        border: none;
+    }
+}

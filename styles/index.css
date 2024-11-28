@@ -1615,6 +1615,7 @@ body {
 
 .info {
   margin-top: 2rem;
+  margin-bottom: 3.5rem;
 }
 .info__media {
   padding: 0 2rem;
@@ -1659,4 +1660,44 @@ body {
   width: 100%;
   padding: 0 1rem;
   aspect-ratio: 16/9;
+}
+
+.form {
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.form__label {
+  display: none;
+}
+.form__input {
+  text-align: left;
+  background-color: #F9F9F9;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1rem;
+}
+.form__input__icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1rem;
+}
+.form__input__text-input {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.1rem;
+  border: none;
+  background-color: transparent;
+  width: 85%;
+}
+.form__submit {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  background-color: #BDAC8D;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1.5rem 6rem;
+  border: none;
 }/*# sourceMappingURL=index.css.map */
