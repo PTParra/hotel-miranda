@@ -1,0 +1,136 @@
+.offers{
+    margin-top: 3rem;
+    padding: 0 1rem;
+
+    &__room{
+        position: relative;
+        margin-bottom: 2rem;
+        &__image-link{
+            display: block;
+
+            &__image{
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
+            }
+        }
+
+        &__description{
+            padding: 0 1rem;
+            background-color: $color-blanco;
+            &__price-name{
+                padding-top: 1rem;
+                margin-bottom: 1rem;
+                .room-name{
+                    &__subtitle{
+                        @include archivo-font;
+                        font-weight: 700;
+                        font-size: .9rem;
+                        text-transform: uppercase;
+                        color: $color-gris;
+                        letter-spacing: .2rem;
+                        margin-bottom: 1rem
+                    }
+
+                    &__title{
+                        @include old-standard-font;
+                        display: inline-block;
+                        font-weight: 400;
+                        font-size: 2.25rem;
+                        text-decoration: none;
+                        color: $color-negro;
+                        width: 80%;
+                    }
+                }
+
+                .room-prices{
+                    position: absolute;
+                    top: 10%;
+                    right: 5%;
+                    text-align: right;
+                    &__price {
+                        @include archivo-font;
+                        color: $color-caqui;
+                        font-weight: 700;
+                        font-size: 2rem;
+    
+                        &__per-night {
+                            font-size: .8rem;
+                        }
+                        
+                        &--previous{
+                            margin-bottom: 1rem;
+                            .room-prices__price{
+
+                                &__number{
+                                    font-size: 1.5rem;
+                                }
+    
+                                &__per-night, &__number{
+                                    text-decoration: line-through;
+                                }
+                            }
+                        }
+    
+                        &--discount{
+                            color: $color-rosa;
+                        }
+                    }
+                }
+            }
+
+            &__characteristics{
+
+                .characteristics__text-block{
+                    margin-bottom: 1.5rem;
+                    &__description-text{
+                        @include archivo-font;
+                        font-size: .9rem;
+                        color: $color-gris;
+                        margin-bottom: 1rem;
+                        padding-right: 2rem;
+                        line-height: 1.5rem;
+                    }
+
+                    &__list {
+                        list-style: none;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: .8rem;
+            
+                        &__perk {
+            
+                            &__image {
+                                width: 16px;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: .5rem;
+                            }
+            
+                            &__text {
+                                @include roboto-font;
+                                font-weight: 500;
+                                color: $color-gris;
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+
+                .characteristics__book-now{
+                    @include archivo-font;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: .2rem;
+                    display: inline-block;
+                    background-color: $color-caqui;
+                    color: $color-blanco;
+                    text-decoration: none;
+                    padding: 1.5rem 4rem;
+                }
+            }
+        }
+    }
+}

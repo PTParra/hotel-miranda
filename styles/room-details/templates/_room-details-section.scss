@@ -45,6 +45,10 @@
                         margin-bottom: 1rem;
                         .mini-description__prices-container__price{
 
+                            &__number{
+                                font-size: 1.5rem;
+                            }
+
                             &__per-night, &__number{
                                 text-decoration: line-through;
                             }
