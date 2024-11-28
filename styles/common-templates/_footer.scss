@@ -148,3 +148,34 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .footer{
+
+        &__top-container{
+            display: flex;
+            justify-content: space-evenly;
+            &__hotel{
+                width: 15%;
+            }
+
+            &__services{
+                width: 20%;
+            }
+
+            &__contact-info{
+                width: 30%;
+            }
+        }
+
+        &__bottom-container{
+            display: flex;
+            justify-content: space-around;
+            padding-left: 6rem;
+            padding-right: 6rem;
+            &__text{
+                margin: 0;
+            }
+        }
+    }
+}

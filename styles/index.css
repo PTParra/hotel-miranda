@@ -11,9 +11,6 @@ body {
   min-width: 320px;
 }
 
-.header {
-  position: relative;
-}
 .header__title {
   display: none;
 }
@@ -110,6 +107,57 @@ body {
   width: 15px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .show-links {
+    position: static;
+    filter: none;
+  }
+  .header {
+    background-color: #222222;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+  .header__title {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+  }
+  .navbar {
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 4rem;
+    filter: none;
+    margin-top: -2.5rem;
+    margin-bottom: -2.65rem;
+  }
+  .navbar__hamburger-button {
+    display: none;
+  }
+  .navbar__logo {
+    width: 20%;
+  }
+  .navbar__logo__letter {
+    font-size: 2.2rem;
+  }
+  .navbar__links-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 60%;
+  }
+  .navbar__links-container__link {
+    margin: 0;
+  }
+  .navbar__buttons__button {
+    border: 2px solid rgba(133, 133, 133, 0.3019607843);
+    padding: 0.8rem;
+  }
+  .navbar__buttons__button__image {
+    width: 18px;
+  }
+}
 .front {
   background-color: #333333;
 }
@@ -156,14 +204,14 @@ body {
   padding: 3rem 1rem;
   background-color: #222222;
 }
-.front__availability__label {
+.front__availability__field__label {
   display: block;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 1.2rem;
 }
-.front__availability__date-input {
+.front__availability__field__date-input {
   display: flex;
   position: relative;
   width: 100%;
@@ -175,11 +223,12 @@ body {
   color: #BDBDBD;
   margin-bottom: 2rem;
 }
-.front__availability__date-input::-webkit-inner-spin-button, .front__availability__date-input::-webkit-calendar-picker-indicator {
+.front__availability__field__date-input::-webkit-inner-spin-button, .front__availability__field__date-input::-webkit-calendar-picker-indicator {
   background-image: url("../../assets/icons/home-page/calendar.png");
   position: absolute;
   left: 0;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 .front__availability__submit {
   font-family: "Archivo", sans-serif;
@@ -194,6 +243,37 @@ body {
   margin-top: 1rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .front__banner {
+    padding: 8rem 13rem;
+    padding-bottom: 3rem;
+  }
+  .front__banner__subtitle {
+    font-size: 0.7rem;
+  }
+  .front__banner__title--home {
+    font-size: 7rem;
+    width: 70%;
+  }
+  .front__availability {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .front__availability__field {
+    text-align: left;
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+    margin-right: 2rem;
+  }
+  .front__availability__field__date-input {
+    margin: 0;
+  }
+  .front__availability__submit {
+    margin-left: 6rem;
+  }
+}
 .footer {
   background-image: url("../assets/images/background-footer.png");
   background-blend-mode: soft-light;
@@ -320,6 +400,30 @@ body {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer__top-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer__top-container__hotel {
+    width: 15%;
+  }
+  .footer__top-container__services {
+    width: 20%;
+  }
+  .footer__top-container__contact-info {
+    width: 30%;
+  }
+  .footer__bottom-container {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .footer__bottom-container__text {
+    margin: 0;
+  }
+}
 .identifier {
   text-align: right;
   padding-right: 1.5rem;
@@ -337,6 +441,11 @@ body {
   color: #BDAC8D;
 }
 
+@media only screen and (min-width: 1000px) {
+  .identifier {
+    margin-top: -3rem;
+  }
+}
 .about-section {
   margin-top: 3.75rem;
   margin-bottom: 2.5rem;
