@@ -99,3 +99,22 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .rooms{
+        margin: 3rem 0;
+        &__order-by-price{
+            font-size: 1.2rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            margin-right: 13rem;
+        }
+        &__grid-container{
+            display: grid;
+            grid-template-columns: 25% 25% 25%;
+            justify-content: center;
+            gap: 1.9rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

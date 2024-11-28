@@ -127,7 +127,7 @@ body {
   .navbar {
     width: 80%;
     margin: 0 auto;
-    padding-right: 4rem;
+    justify-content: space-evenly;
     filter: none;
     margin-top: -2.5rem;
     margin-bottom: -2.65rem;
@@ -136,7 +136,7 @@ body {
     display: none;
   }
   .navbar__logo {
-    width: 20%;
+    width: 25%;
   }
   .navbar__logo__letter {
     font-size: 2.2rem;
@@ -444,6 +444,7 @@ body {
 @media only screen and (min-width: 1000px) {
   .identifier {
     margin-top: -3rem;
+    padding-right: 15rem;
   }
 }
 .about-section {
@@ -1185,6 +1186,24 @@ body {
   color: #ffffff;
 }
 
+@media only screen and (min-width: 1000px) {
+  .rooms {
+    margin: 3rem 0;
+  }
+  .rooms__order-by-price {
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: 13rem;
+  }
+  .rooms__grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    gap: 1.9rem;
+    margin-bottom: 2rem;
+  }
+}
 .room-details {
   margin: 3rem 0;
 }
