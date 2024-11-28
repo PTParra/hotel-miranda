@@ -47,34 +47,39 @@
         padding: 3rem 1rem;
         background-color: $color-oscuro;
 
-        &__label{
-            display: block;
-            @include roboto-font;
-            color: $color-blanco;
-            font-weight: 700;
-            margin-bottom: 1.2rem;
+        &__field{
+
+            &__label{
+                display: block;
+                @include roboto-font;
+                color: $color-blanco;
+                font-weight: 700;
+                margin-bottom: 1.2rem;
+            }
+    
+            &__date-input{
+                display: flex;
+                position: relative;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid #BEAD8E;
+                padding: .5rem 0;
+                padding-left: 1.8rem;
+                color: $color-gris-claro;
+                margin-bottom: 2rem;
+            }
+    
+            &__date-input::-webkit-inner-spin-button,
+            &__date-input::-webkit-calendar-picker-indicator {
+                background-image: url('../../assets/icons/home-page/calendar.png');
+                position: absolute;
+                left: 0;
+                font-size: 1.1rem;
+                cursor: pointer
+            }
         }
 
-        &__date-input{
-            display: flex;
-            position: relative;
-            width: 100%;
-            background-color: transparent;
-            border: none;
-            border-bottom: 2px solid #BEAD8E;
-            padding: .5rem 0;
-            padding-left: 1.8rem;
-            color: $color-gris-claro;
-            margin-bottom: 2rem;
-        }
-
-        &__date-input::-webkit-inner-spin-button,
-        &__date-input::-webkit-calendar-picker-indicator {
-            background-image: url('../../assets/icons/home-page/calendar.png');
-            position: absolute;
-            left: 0;
-            font-size: 1.1rem;
-        }
 
         &__submit{
             @include archivo-font;
@@ -87,6 +92,49 @@
             letter-spacing: 0.2rem;
             font-weight: 700;
             margin-top: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .front{
+
+        &__banner{
+            padding: 8rem 13rem;
+            padding-bottom: 3rem;
+
+
+            &__subtitle{
+                font-size: .7rem;
+            }
+
+            &__title{
+
+                &--home{
+                    font-size: 7rem;
+                    width: 70%;
+                }
+            }
+        }
+
+        &__availability{
+            text-align: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            &__field{
+                text-align: left;
+                display: inline-block;
+                width: 20%;
+                vertical-align: middle;
+                margin-right: 2rem;
+                &__date-input{
+                    margin: 0;
+                }
+            }
+
+            &__submit{
+                margin-left: 6rem;
+            }
         }
     }
 }
