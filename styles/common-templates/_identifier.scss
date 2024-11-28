@@ -1,0 +1,19 @@
+.identifier{
+    text-align: right;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-top: -3.1rem;
+
+    &__text{
+        @include archivo-font;
+        background-color: $color-blanco;
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        font-weight: 700;
+        word-spacing: .3rem;
+
+        &__section{
+            color: $color-caqui;
+        }
+    }
+}

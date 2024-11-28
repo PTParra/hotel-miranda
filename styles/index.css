@@ -320,6 +320,24 @@ body {
   text-decoration: none;
 }
 
+.identifier {
+  text-align: right;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-top: -3.1rem;
+}
+.identifier__text {
+  font-family: "Archivo", sans-serif;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  word-spacing: 0.3rem;
+}
+.identifier__text__section {
+  color: #BDAC8D;
+}
+
 .about-section {
   margin-top: 3.75rem;
   margin-bottom: 2.5rem;
@@ -714,6 +732,8 @@ body {
 .hotel-images-swiper .swiper-slide .hotel-image {
   width: 100%;
   aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hotel-images-swiper .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #BDAC8D;
@@ -747,4 +767,220 @@ body {
 }
 .satisfaction__archievement--last {
   margin-bottom: 0;
+}
+
+.about {
+  margin-top: 1.75rem;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+.about__video {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.about__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.about__buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.about__buttons-container__button {
+  aspect-ratio: 1/1;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.about__buttons-container__button .button-icon {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+.about__buttons-container__button .button-text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.about__buttons-container__button--active {
+  background-color: #BDAC8D;
+  color: #ffffff;
+}
+.about__buttons-container__button--active .button__icon {
+  width: 40%;
+}
+.about__benefit {
+  padding: 0 1rem;
+}
+.about__benefit__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.about__benefit__text-container__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+.about__benefit__text-container__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: -0.05rem;
+  margin-bottom: 1rem;
+}
+.about__benefit__text-container__text {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #777777;
+  margin-bottom: 1rem;
+}
+.about__benefit__text-container__link {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  background-color: #BDAC8D;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+}
+
+.facilities {
+  background-color: #222222;
+  padding: 4rem 1rem;
+  margin-bottom: 3.5rem;
+}
+.facilities__subtitle {
+  font-family: "Archivo", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.facilities__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.4rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.facilities .facilities-list-swiper {
+  padding: 3rem 0;
+}
+.facilities .facilities-list-swiper .facility {
+  position: relative;
+  background-color: #292929;
+  padding: 2rem 1rem;
+}
+.facilities .facilities-list-swiper .facility__number {
+  font-family: "Archivo", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-size: 7.5rem;
+  color: #222222;
+  font-weight: 700;
+}
+.facilities .facilities-list-swiper .facility__icon {
+  margin-bottom: 1.75rem;
+}
+.facilities .facilities-list-swiper .facility__title {
+  font-family: "Old Standard TT", serif;
+  color: #ffffff;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+}
+.facilities .facilities-list-swiper .facility__text {
+  font-family: "Archivo", sans-serif;
+  color: #ffffff;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+.facilities .facilities-list-swiper .swiper-pagination-bullet-active {
+  background-color: #BDAC8D;
+}
+
+.counter {
+  padding: 0 1.5rem;
+  margin-bottom: 4rem;
+}
+.counter__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  color: #777777;
+}
+.counter__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.4rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  margin-bottom: 2rem;
+}
+.counter__archievement-list {
+  list-style: none;
+}
+.counter__archievement-list__archievement {
+  margin-bottom: 2rem;
+}
+.counter__archievement-list__archievement__image {
+  display: inline-block;
+  vertical-align: middle;
+}
+.counter__archievement-list__archievement__text-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+.counter__archievement-list__archievement__text-container__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.4rem;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+}
+.counter__archievement-list__archievement__text-container__subtitle {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+}
+.counter__archievement-list__archievement__arrow {
+  display: inline-block;
+  vertical-align: middle;
+}
+.counter__images-swiper .swiper-slide {
+  padding: 2rem 0;
+}
+.counter__images-swiper .swiper-slide .counter-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.counter__images-swiper .swiper-pagination-bullet-active {
+  background-color: #BDAC8D;
 }/*# sourceMappingURL=index.css.map */

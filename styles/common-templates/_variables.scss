@@ -8,9 +8,20 @@ $color-oscuro: #222222;
 $color-gris-oscuro: #333333;
 $color-gris-roto: #C2C2C2;
 $color-gris-oscurecido: #999999;
+$color-oscuro-mas-claro: #292929;
 
 @mixin section-title{
     font-size: 3.4rem;
     font-weight: 400;
     letter-spacing: -.15rem;
+}
+
+@mixin archivo-font{
+    font-family: "Archivo", sans-serif;
+}
+@mixin roboto-font{
+    font-family: "Roboto", sans-serif;
+}
+@mixin old-standard-font{
+    font-family: "Old Standard TT", serif;
 }

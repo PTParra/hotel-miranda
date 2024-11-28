@@ -2,16 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); //Roboto Font
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap'); //Old Standard TT Font
 
-@mixin archivo-font{
-    font-family: "Archivo", sans-serif;
-}
-@mixin roboto-font{
-    font-family: "Roboto", sans-serif;
-}
-@mixin old-standard-font{
-    font-family: "Old Standard TT", serif;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,4 +17,6 @@ body {
 @import './common-templates/header.scss';
 @import './common-templates/front.scss';
 @import './common-templates/footer.scss';
+@import './common-templates/identifier.scss';
 @import './home/home.scss';
+@import './about/about.scss';
