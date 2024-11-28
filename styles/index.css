@@ -547,4 +547,15 @@ body {
 .menu .food-list-swiper .swiper-button-next::after, .menu .food-list-swiper .swiper-button-prev::after {
   color: #111111;
   font-size: 0.7rem;
+}
+
+.hotel-images-swiper .swiper-slide {
+  padding: 2rem 1rem;
+}
+.hotel-images-swiper .swiper-slide .hotel-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.hotel-images-swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #BDAC8D;
 }/*# sourceMappingURL=index.css.map */
