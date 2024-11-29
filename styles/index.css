@@ -1289,7 +1289,7 @@ body {
   margin-bottom: 1rem;
 }
 .room-details__description .room-image-and-form .availability-form__date-input::-webkit-inner-spin-button, .room-details__description .room-image-and-form .availability-form__date-input::-webkit-calendar-picker-indicator {
-  background-image: url("../../assets/icons/room-details-page/calendar-grey.png");
+  background-image: url("../assets/icons/room-details-page/calendar-grey.png");
   position: absolute;
   right: 7%;
   font-size: 1.1rem;
