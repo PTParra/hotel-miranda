@@ -7,6 +7,7 @@
         display: block;
         width: 100%;
         margin: 0 auto;
+        aspect-ratio: 16 / 9;
         margin-bottom: 2rem;
     }
 
@@ -99,6 +100,54 @@
                 color: $color-blanco;
                 text-decoration: none;
                 padding: 1.5rem 3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .about{
+        margin-top: 4rem;
+        &__video{
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__title{
+            font-size: 3rem;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__buttons-container{
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 4rem;
+
+            &__button{
+                padding: 1rem;
+            }
+        }
+
+        &__benefit{
+            display: flex;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+            gap: 3rem;
+
+            &__image{
+                margin: 0;
+            }
+
+            &__text-container{
+                align-content: center;
+                padding: 3rem 0;
             }
         }
     }
