@@ -986,6 +986,7 @@ body {
   .menu {
     padding: 0 20rem;
     padding-top: 15rem;
+    margin-bottom: 5rem;
   }
   .menu__donut-image {
     width: 230px;
@@ -1061,6 +1062,21 @@ body {
   background-color: #BDAC8D;
 }
 
+@media only screen and (min-width: 1000px) {
+  .hotel-images-swiper .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .hotel-images-swiper .swiper-wrapper .swiper-slide {
+    width: 20%;
+  }
+  .hotel-images-swiper .swiper-wrapper .swiper-slide .hotel-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .satisfaction {
   background-color: #222222;
   padding: 3rem 0;
