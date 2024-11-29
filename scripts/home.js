@@ -2,14 +2,23 @@ const swiperRooms = new Swiper('.rooms-section__swiper', {
     // Optional parameters
     loop: true,
     slidesPerView: 1,
+    
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    autoplay: {
+    /*autoplay: {
       delay: 3000,
       disableOnInteraction: false,
+    },*/
+
+    breakpoints: {
+      1000: {
+        slidesPerView: 2.5,
+        spaceBetween: 50,
+        centeredSlides: true,
+      },
     },
 });
 

@@ -633,6 +633,8 @@ body {
   margin-top: -1.5rem;
 }
 .rooms-section__swiper .room-selection__characteristics {
+  transition: opacity 150ms ease-in;
+  opacity: 0;
   padding: 0.8rem 1.5rem;
   list-style: none;
   display: inline-flex;
@@ -678,10 +680,16 @@ body {
 .rooms-section__swiper .room-selection.swiper-slide-active .room-selection__description {
   opacity: 1;
 }
+.rooms-section__swiper .room-selection.swiper-slide-active .room-selection__characteristics {
+  opacity: 1;
+}
 .rooms-section__swiper .swiper-button-prev, .rooms-section__swiper .swiper-button-next {
   position: absolute;
   top: 35%;
   padding: 0 1.3rem;
+  font-size: 1.2rem;
+  color: #111111;
+  font-weight: 700;
 }
 .rooms-section__swiper .swiper-button-prev {
   left: 3%;
@@ -692,10 +700,52 @@ body {
   background-color: #ffffff;
 }
 .rooms-section__swiper .swiper-button-prev::after, .rooms-section__swiper .swiper-button-next::after {
-  font-size: 0.7rem;
-  color: #111111;
+  content: "";
 }
 
+@media only screen and (min-width: 1000px) {
+  .rooms-section {
+    margin-bottom: 4rem;
+  }
+  .rooms-section__swiper .room-selection__description {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rooms-section__swiper .room-selection__description__text-container {
+    width: 50%;
+    text-align: left;
+  }
+  .rooms-section__swiper .room-selection__description__text-container__mini-description {
+    margin: 0;
+  }
+  .rooms-section__swiper .room-selection__description__price {
+    font-size: 2rem;
+    color: #BDAC8D;
+    font-weight: 700;
+  }
+  .rooms-section__swiper .room-selection__description__price__per-night {
+    font-size: 0.8rem;
+  }
+  .rooms-section__swiper .swiper-button-prev, .rooms-section__swiper .swiper-button-next {
+    top: 40%;
+    transition: background-color 150ms ease-in, color 150ms ease-in;
+  }
+  .rooms-section__swiper .swiper-button-prev {
+    left: 25%;
+    background-color: #ffffff;
+  }
+  .rooms-section__swiper .swiper-button-next {
+    right: 25%;
+    background-color: #ffffff;
+  }
+  .rooms-section__swiper .swiper-button-next:hover, .rooms-section__swiper .swiper-button-prev:hover {
+    background-color: #BDAC8D;
+    color: #ffffff;
+  }
+}
 .video-presentation-container {
   background-color: #222222;
   padding: 3rem 1.5rem;
