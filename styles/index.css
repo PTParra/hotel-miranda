@@ -751,7 +751,7 @@ body {
   padding: 3rem 1.5rem;
   margin-bottom: 3.75rem;
 }
-.video-presentation-container__subtitle {
+.video-presentation-container__info__text .subtitle {
   color: #BDAC8D;
   font-family: "Archivo", sans-serif;
   text-transform: uppercase;
@@ -759,7 +759,7 @@ body {
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
 }
-.video-presentation-container__title {
+.video-presentation-container__info__text .title {
   font-family: "Old Standard TT", serif;
   font-size: 3.4rem;
   font-weight: 400;
@@ -768,14 +768,14 @@ body {
   width: 80%;
   margin-bottom: 1.5rem;
 }
-.video-presentation-container__text {
+.video-presentation-container__info__text .text {
   font-family: "Archivo", sans-serif;
   color: #C2C2C2;
   font-size: 0.9rem;
   line-height: 1.5rem;
   margin-bottom: 2rem;
 }
-.video-presentation-container__video {
+.video-presentation-container__info__video {
   width: 100%;
   margin-bottom: 2.25rem;
 }
@@ -792,6 +792,29 @@ body {
   background-color: #BDAC8D;
 }
 
+@media only screen and (min-width: 1000px) {
+  .video-presentation-container {
+    padding: 7rem 15rem;
+    background: linear-gradient(90deg, #222222 70%, #AD9D82 30%);
+  }
+  .video-presentation-container__info {
+    display: flex;
+  }
+  .video-presentation-container__info__text {
+    width: 70%;
+  }
+  .video-presentation-container__info__text .title {
+    font-size: 5rem;
+  }
+  .video-presentation-container__info__text .text {
+    width: 55%;
+  }
+  .video-presentation-container__info__video {
+    width: 45%;
+    height: auto;
+    aspect-ratio: 4/3;
+  }
+}
 .facilities-section {
   margin-bottom: 4rem;
 }

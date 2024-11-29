@@ -8,10 +8,10 @@ const swiperRooms = new Swiper('.rooms-section__swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    /*autoplay: {
+    autoplay: {
       delay: 3000,
       disableOnInteraction: false,
-    },*/
+    },
 
     breakpoints: {
       1000: {
