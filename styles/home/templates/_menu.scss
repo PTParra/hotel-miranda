@@ -60,9 +60,9 @@
                         line-height: 1.5rem;
                     }
 
-                    &__hidden-arrow{
-                        display: none;
-                    }
+                }
+                &__hidden-arrow{
+                    display: none;
                 }
             }
         }
@@ -73,7 +73,9 @@
         .swiper-button-next, .swiper-button-prev{
             position: absolute;
             background-color: $color-blanco-roto;
+            color: $color-negro;
             padding: 0 1.3rem;
+            font-size: 1.1rem;
             top: 95%;
         }
 
@@ -85,9 +87,83 @@
             left: 70%;
         }
 
-        .swiper-button-next::after, .swiper-button-prev::after{
-            color: $color-negro;
-            font-size: .7rem;
+        .swiper-button-prev::after, .swiper-button-next::after{
+            content: "";
+            display: none;
         }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .menu{
+        padding: 0 20rem;
+        padding-top: 15rem;
+        margin-bottom: 5rem;
+        &__donut-image{
+            width: 230px;
+            right: auto;
+            left: 3%;
+        }
+
+        &__title{
+            font-size: 5rem;
+        }
+
+        .food-list-swiper{
+            padding: 0;
+            padding-top: 7rem;
+            text-align: right;
+            .food{
+                text-align: left;
+                padding-right: 2rem;
+                &__link{
+                    justify-content: start;
+                    align-items: center;
+                    &__image{
+                        aspect-ratio: 1 / 1;
+                        width: 20%;
+                    }
+
+                    &__text-container{
+                        width: auto;
+                        padding: 0;
+                        padding-left: 2rem;
+                        align-content: center;
+                    }
+                }
+                &:hover{
+                    background-color: $color-oscuro;
+                    
+                    & .food__link{
+                        color: $color-blanco;
+                    }
+
+                    & .food__link__hidden-arrow{
+                        display: block;
+                    }
+                }
+            }
+            
+            .swiper-button-next, .swiper-button-prev{
+                width: auto;
+                height: auto;
+                padding: .5rem 1rem;
+                margin-bottom: 2rem;
+                font-size: 2rem;
+                position: static;
+                display: inline-block;
+                transition: background-color 150ms ease-in, color 150ms ease-in;
+            }
+            
+            .swiper-button-prev{
+                margin-right: 2rem;
+            }
+
+            .swiper-button-next:hover, .swiper-button-prev:hover{
+                background-color: $color-caqui;
+                color: $color-blanco;
+            }
+        }
+  
     }
 }

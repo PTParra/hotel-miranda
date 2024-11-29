@@ -2,36 +2,40 @@
     background-color: $color-oscuro;
     padding: 3rem 1.5rem;
     margin-bottom: 3.75rem;
-    
-    &__subtitle{
-        color: $color-caqui;
-        @include archivo-font;
-        text-transform: uppercase;
-        letter-spacing: .2rem;
-        font-size: .9rem;
-        margin-bottom: 1.5rem;
+    &__info{
+
+        &__text{
+            .subtitle{
+                color: $color-caqui;
+                @include archivo-font;
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+                font-size: .9rem;
+                margin-bottom: 1.5rem;
+            }
+        
+            .title{
+                @include old-standard-font;
+                @include section-title;
+                color: $color-blanco;
+                width: 80%;
+                margin-bottom: 1.5rem;
+            }
+        
+            .text{
+                @include archivo-font;
+                color: $color-gris-roto;
+                font-size: 0.9rem;
+                line-height: 1.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+        &__video{
+            width: 100%;
+            margin-bottom: 2.25rem;
+        }
     }
 
-    &__title{
-        @include old-standard-font;
-        @include section-title;
-        color: $color-blanco;
-        width: 80%;
-        margin-bottom: 1.5rem;
-    }
-
-    &__text{
-        @include archivo-font;
-        color: $color-gris-roto;
-        font-size: 0.9rem;
-        line-height: 1.5rem;
-        margin-bottom: 2rem;
-    }
-
-    &__video{
-        width: 100%;
-        margin-bottom: 2.25rem;
-    }
 
     &__learn-more{
         @include archivo-font;
@@ -44,5 +48,33 @@
         padding: 1.4rem 2.5rem;
         letter-spacing: .2rem;
         background-color: $color-caqui
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .video-presentation-container{
+        padding: 7rem 15rem;
+        background: linear-gradient(90deg, $color-oscuro 70%, $color-dorado 30%);
+        &__info{
+            display: flex;
+            &__text{
+                width: 70%;
+                .title{
+                    font-size: 5rem;
+                }
+
+                .text{
+                    width: 55%;
+                }
+                
+            }
+
+            &__video{
+                width: 45%;
+                height: auto;
+                aspect-ratio: 4 / 3;
+            }
+        }
+
     }
 }

@@ -34,6 +34,8 @@
             }
 
             &__characteristics{
+                transition: opacity 150ms ease-in;
+                opacity: 0;
                 padding: .8rem 1.5rem;
                 list-style: none;
                 display: inline-flex;
@@ -92,27 +94,91 @@
             .room-selection__description{
                 opacity: 1; 
             }
+
+            .room-selection__characteristics{
+                opacity: 1;
+            }
+
         }
 
         .swiper-button-prev, .swiper-button-next{
             position: absolute;
             top: 35%;
             padding: 0 1.3rem;
+            font-size: 1.2rem;
+            color: $color-negro;
+            font-weight: 700;
+            background-color: $color-blanco;
         }
 
         .swiper-button-prev{
             left: 3%;
-            background-color: $color-blanco;
         }
    
         .swiper-button-next{
             right: 3%;
-            background-color: $color-blanco;
         }
 
         .swiper-button-prev::after, .swiper-button-next::after{
-           font-size: .7rem;
-           color: $color-negro;
+           content: "";
         }   
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .rooms-section{
+        margin-bottom: 4rem;
+        &__title{
+            font-size: 5rem;
+        }
+        &__swiper{
+
+            .room-selection{
+                &__description{
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &__text-container{
+                        width: 50%;
+                        text-align: left;
+    
+                        &__mini-description{
+                            margin: 0;
+                        }
+    
+                    }
+    
+                    &__price{
+                        font-size: 2rem;
+                        color: $color-caqui;
+                        font-weight: 700;
+    
+                        &__per-night{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+
+            .swiper-button-prev, .swiper-button-next{
+                top: 40%;
+                transition: background-color 150ms ease-in, color 150ms ease-in;
+            }
+
+            .swiper-button-prev{
+                left: 25%;
+            }
+       
+            .swiper-button-next{
+                right: 25%;
+            }
+
+            .swiper-button-next:hover, .swiper-button-prev:hover{
+                background-color: $color-caqui;
+                color: $color-blanco;
+            }
+        }
     }
 }
