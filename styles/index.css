@@ -1129,6 +1129,7 @@ body {
   display: block;
   width: 100%;
   margin: 0 auto;
+  aspect-ratio: 16/9;
   margin-bottom: 2rem;
 }
 .about__title {
@@ -1214,6 +1215,47 @@ body {
   padding: 1.5rem 3rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .about {
+    margin-top: 4rem;
+  }
+  .about__video {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__title {
+    font-size: 3rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+  .about__buttons-container__button {
+    padding: 1rem;
+  }
+  .about__benefit {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    gap: 3rem;
+  }
+  .about__benefit__image {
+    margin: 0;
+  }
+  .about__benefit__text-container {
+    align-content: center;
+    padding: 3rem 0;
+  }
+}
 .facilities {
   background-color: #222222;
   padding: 4rem 1rem;
@@ -1275,6 +1317,20 @@ body {
   background-color: #BDAC8D;
 }
 
+@media only screen and (min-width: 1000px) {
+  .facilities__title {
+    font-size: 4rem;
+  }
+  .facilities .facilities-list-swiper .swiper-wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15% 15% 15%;
+    gap: 3rem;
+  }
+  .facilities .facilities-list-swiper .swiper-wrapper .facility__number {
+    font-size: 6.5rem;
+  }
+}
 .counter {
   padding: 0 1.5rem;
   margin-bottom: 4rem;
@@ -1336,6 +1392,31 @@ body {
   background-color: #BDAC8D;
 }
 
+@media only screen and (min-width: 1000px) {
+  .counter {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .counter__archievement-list {
+    margin-bottom: 3rem;
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+  .counter__archievement-list__archievement {
+    margin: 0;
+  }
+  .counter__archievement-list__archievement__text-container {
+    margin-right: 1rem;
+  }
+  .counter__images-swiper .swiper-wrapper {
+    gap: 1rem;
+  }
+  .counter__images-swiper .swiper-wrapper .swiper-slide {
+    width: 50%;
+  }
+}
 .rooms {
   margin-top: 2rem;
   margin-bottom: 1.5rem;

@@ -1,8 +1,9 @@
-.facilities{
+.facilities {
     background-color: $color-oscuro;
     padding: 4rem 1rem;
     margin-bottom: 3.5rem;
-    &__subtitle{
+
+    &__subtitle {
         @include archivo-font;
         color: $color-blanco;
         font-weight: 700;
@@ -13,7 +14,7 @@
         margin-bottom: 1rem
     }
 
-    &__title{
+    &__title {
         @include old-standard-font;
         @include section-title;
         color: $color-blanco;
@@ -21,13 +22,15 @@
         margin-bottom: 1rem;
     }
 
-    .facilities-list-swiper{
+    .facilities-list-swiper {
         padding: 3rem 0;
-        .facility{
+
+        .facility {
             position: relative;
             background-color: $color-oscuro-mas-claro;
             padding: 2rem 1rem;
-            &__number{ 
+
+            &__number {
                 @include archivo-font;
                 position: absolute;
                 top: 0;
@@ -36,20 +39,20 @@
                 color: $color-oscuro;
                 font-weight: 700;
             }
-    
-            &__icon{
+
+            &__icon {
                 margin-bottom: 1.75rem;
             }
-    
-            &__title{
+
+            &__title {
                 @include old-standard-font;
                 color: $color-blanco;
                 font-size: 1.9rem;
                 font-weight: 400;
                 letter-spacing: -.05rem;
             }
-    
-            &__text{
+
+            &__text {
                 @include archivo-font;
                 color: $color-blanco;
                 line-height: 1.5rem;
@@ -57,8 +60,35 @@
             }
         }
 
-        .swiper-pagination-bullet-active{
-                background-color: $color-caqui;
+        .swiper-pagination-bullet-active {
+            background-color: $color-caqui;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .facilities {
+
+        &__title {
+            font-size: 4rem;
+        }
+        .facilities-list-swiper {
+    
+            .swiper-wrapper {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 15% 15% 15%;
+                gap: 3rem;
+    
+                .facility {
+    
+                    &__number {
+                        font-size: 6.5rem;
+                    }
+                }
+            }
         }
     }
 
