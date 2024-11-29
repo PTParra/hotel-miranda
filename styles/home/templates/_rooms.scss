@@ -108,16 +108,15 @@
             font-size: 1.2rem;
             color: $color-negro;
             font-weight: 700;
+            background-color: $color-blanco;
         }
 
         .swiper-button-prev{
             left: 3%;
-            background-color: $color-blanco;
         }
    
         .swiper-button-next{
             right: 3%;
-            background-color: $color-blanco;
         }
 
         .swiper-button-prev::after, .swiper-button-next::after{
@@ -170,12 +169,10 @@
 
             .swiper-button-prev{
                 left: 25%;
-                background-color: $color-blanco;
             }
        
             .swiper-button-next{
                 right: 25%;
-                background-color: $color-blanco;
             }
 
             .swiper-button-next:hover, .swiper-button-prev:hover{

@@ -690,14 +690,13 @@ body {
   font-size: 1.2rem;
   color: #111111;
   font-weight: 700;
+  background-color: #ffffff;
 }
 .rooms-section__swiper .swiper-button-prev {
   left: 3%;
-  background-color: #ffffff;
 }
 .rooms-section__swiper .swiper-button-next {
   right: 3%;
-  background-color: #ffffff;
 }
 .rooms-section__swiper .swiper-button-prev::after, .rooms-section__swiper .swiper-button-next::after {
   content: "";
@@ -738,11 +737,9 @@ body {
   }
   .rooms-section__swiper .swiper-button-prev {
     left: 25%;
-    background-color: #ffffff;
   }
   .rooms-section__swiper .swiper-button-next {
     right: 25%;
-    background-color: #ffffff;
   }
   .rooms-section__swiper .swiper-button-next:hover, .rooms-section__swiper .swiper-button-prev:hover {
     background-color: #BDAC8D;
@@ -960,7 +957,7 @@ body {
   font-size: 0.9rem;
   line-height: 1.5rem;
 }
-.menu .food-list .food__link__text-container__hidden-arrow {
+.menu .food-list .food__link__hidden-arrow {
   display: none;
 }
 .menu .food-list-swiper {
@@ -969,7 +966,9 @@ body {
 .menu .food-list-swiper .swiper-button-next, .menu .food-list-swiper .swiper-button-prev {
   position: absolute;
   background-color: #F9F9F9;
+  color: #111111;
   padding: 0 1.3rem;
+  font-size: 1.1rem;
   top: 95%;
 }
 .menu .food-list-swiper .swiper-button-next {
@@ -978,11 +977,74 @@ body {
 .menu .food-list-swiper .swiper-button-prev {
   left: 70%;
 }
-.menu .food-list-swiper .swiper-button-next::after, .menu .food-list-swiper .swiper-button-prev::after {
-  color: #111111;
-  font-size: 0.7rem;
+.menu .food-list-swiper .swiper-button-prev::after, .menu .food-list-swiper .swiper-button-next::after {
+  content: "";
+  display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  .menu {
+    padding: 0 20rem;
+    padding-top: 15rem;
+  }
+  .menu__donut-image {
+    width: 230px;
+    right: auto;
+    left: 3%;
+  }
+  .menu__title {
+    font-size: 5rem;
+  }
+  .menu .food-list-swiper {
+    padding: 0;
+    padding-top: 7rem;
+    text-align: right;
+  }
+  .menu .food-list-swiper .food {
+    text-align: left;
+    padding-right: 2rem;
+  }
+  .menu .food-list-swiper .food__link {
+    justify-content: start;
+    align-items: center;
+  }
+  .menu .food-list-swiper .food__link__image {
+    aspect-ratio: 1/1;
+    width: 20%;
+  }
+  .menu .food-list-swiper .food__link__text-container {
+    width: auto;
+    padding: 0;
+    padding-left: 2rem;
+    align-content: center;
+  }
+  .menu .food-list-swiper .food:hover {
+    background-color: #222222;
+  }
+  .menu .food-list-swiper .food:hover .food__link {
+    color: #ffffff;
+  }
+  .menu .food-list-swiper .food:hover .food__link__hidden-arrow {
+    display: block;
+  }
+  .menu .food-list-swiper .swiper-button-next, .menu .food-list-swiper .swiper-button-prev {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: static;
+    display: inline-block;
+    transition: background-color 150ms ease-in, color 150ms ease-in;
+  }
+  .menu .food-list-swiper .swiper-button-prev {
+    margin-right: 2rem;
+  }
+  .menu .food-list-swiper .swiper-button-next:hover, .menu .food-list-swiper .swiper-button-prev:hover {
+    background-color: #BDAC8D;
+    color: #ffffff;
+  }
+}
 .hotel-images-swiper {
   margin-bottom: 2.75rem;
 }

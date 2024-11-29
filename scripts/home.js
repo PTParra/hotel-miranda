@@ -37,6 +37,12 @@ const swiperMenu = new Swiper('.food-list-swiper', {
     delay: 5000,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    1000: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
 });
 
 
