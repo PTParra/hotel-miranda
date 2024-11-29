@@ -63,3 +63,29 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .facilities-section{
+        margin: 0;
+        &__title{
+            font-size: 5rem;
+        }
+
+        .features-list-swiper{
+
+            .swiper-wrapper{
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 15% 15% 15%;
+                gap: 3rem;
+                .feature{
+                    padding: 2rem 0;
+
+                    &__number{
+                        font-size: 6.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

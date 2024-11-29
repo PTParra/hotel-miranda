@@ -707,6 +707,9 @@ body {
   .rooms-section {
     margin-bottom: 4rem;
   }
+  .rooms-section__title {
+    font-size: 5rem;
+  }
   .rooms-section__swiper .room-selection__description {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -874,6 +877,26 @@ body {
   background-color: #BDAC8D;
 }
 
+@media only screen and (min-width: 1000px) {
+  .facilities-section {
+    margin: 0;
+  }
+  .facilities-section__title {
+    font-size: 5rem;
+  }
+  .facilities-section .features-list-swiper .swiper-wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15% 15% 15%;
+    gap: 3rem;
+  }
+  .facilities-section .features-list-swiper .swiper-wrapper .feature {
+    padding: 2rem 0;
+  }
+  .facilities-section .features-list-swiper .swiper-wrapper .feature__number {
+    font-size: 6.5rem;
+  }
+}
 .menu {
   position: relative;
   padding: 1.5rem;
