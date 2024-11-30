@@ -300,6 +300,8 @@
                 }
     
                 &__characteristics{
+                    transition: opacity 150ms ease-in;
+                    opacity: 0;
                     padding: .8rem 1.5rem;
                     list-style: none;
                     display: inline-flex;
@@ -315,7 +317,6 @@
                     opacity: 0;
                     width: 90%;
                     margin: 0 auto;
-                    
                     background-color: $color-blanco;
                     position: relative;
                     padding: 1rem 2rem;
@@ -342,13 +343,20 @@
                     }
     
                     &__price{
-                        font-size: 2rem;
+                        @include archivo-font;
+                        display: inline-block;
                         color: $color-caqui;
                         font-weight: 700;
-    
-                        &__per-night{
-                            font-size: 0.8rem;
-                        }
+                        margin-right: .5rem;
+                    }
+
+                    &__book-button{
+                        @include archivo-font;
+                        display: inline-block;
+                        font-size: 1rem;
+                        color: $color-gris-claro;
+                        font-weight: 700;
+                        text-decoration: none;
                     }
                 }
     
@@ -357,6 +365,10 @@
     
             .related-rooms.swiper-slide-active{
                 .related-rooms__description{
+                    opacity: 1; 
+                }
+
+                .related-rooms__characteristics{
                     opacity: 1; 
                 }
             }
@@ -381,6 +393,97 @@
                font-size: .7rem;
                color: $color-negro;
             }   
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .room-details{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6rem;
+        
+        &__description {
+            position: relative;
+            .mini-description {
+                position: absolute;
+                background-color: $color-blanco;
+                margin: 0;
+                display: flex;
+                padding: 1rem 2rem;
+                gap: 6rem;
+                &__room-name{
+                    margin: 0;
+                }
+
+                &__prices-container{
+                    align-content: center;
+                    text-align: right;
+                }
+
+                
+            }
+            .room-image-and-form{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                &__image{
+                    width: 70%;
+                    aspect-ratio: 16 / 9;
+                }
+                .availability-form{
+                    
+                    &__textarea-input{
+                        height: 100px;
+                    }
+                }
+            }
+            &__big-description{
+                width: 60%;
+            }
+        }
+
+        &__characteristics{
+            width: 80%;
+            &__list{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        &__founder{
+            width: 40%;
+            padding: 4rem 0;
+            box-shadow: 0 14px 24px #BEAD8E45;
+        }
+
+        &__cancelation{
+            width: 60%;
+            padding: 0;
+            padding-left: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        &__related-rooms{
+
+            .related-rooms-swiper{
+
+                .swiper-wrapper{
+                    gap: 1rem;
+                    .related-rooms{
+                        width: 30%;
+
+                        &__characteristics, &__description{
+                            opacity: 1;
+                        }
+                        
+                    }
+                }
+
+                .swiper-button-prev, .swiper-button-next{
+                    display: none;
+                }
+            }
         }
     }
 }

@@ -1785,6 +1785,8 @@ body {
   margin-bottom: -1.5rem;
 }
 .room-details__related-rooms .related-rooms-swiper .related-rooms__characteristics {
+  transition: opacity 150ms ease-in;
+  opacity: 0;
   padding: 0.8rem 1.5rem;
   list-style: none;
   display: inline-flex;
@@ -1820,14 +1822,24 @@ body {
   margin-bottom: 1rem;
 }
 .room-details__related-rooms .related-rooms-swiper .related-rooms__description__price {
-  font-size: 2rem;
+  font-family: "Archivo", sans-serif;
+  display: inline-block;
   color: #BDAC8D;
   font-weight: 700;
+  margin-right: 0.5rem;
 }
-.room-details__related-rooms .related-rooms-swiper .related-rooms__description__price__per-night {
-  font-size: 0.8rem;
+.room-details__related-rooms .related-rooms-swiper .related-rooms__description__book-button {
+  font-family: "Archivo", sans-serif;
+  display: inline-block;
+  font-size: 1rem;
+  color: #BDBDBD;
+  font-weight: 700;
+  text-decoration: none;
 }
 .room-details__related-rooms .related-rooms-swiper .related-rooms.swiper-slide-active .related-rooms__description {
+  opacity: 1;
+}
+.room-details__related-rooms .related-rooms-swiper .related-rooms.swiper-slide-active .related-rooms__characteristics {
   opacity: 1;
 }
 .room-details__related-rooms .related-rooms-swiper .swiper-button-prev, .room-details__related-rooms .related-rooms-swiper .swiper-button-next {
@@ -1848,6 +1860,76 @@ body {
   color: #111111;
 }
 
+@media only screen and (min-width: 1000px) {
+  .room-details {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+  }
+  .room-details__description {
+    position: relative;
+  }
+  .room-details__description .mini-description {
+    position: absolute;
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 6rem;
+  }
+  .room-details__description .mini-description__room-name {
+    margin: 0;
+  }
+  .room-details__description .mini-description__prices-container {
+    align-content: center;
+    text-align: right;
+  }
+  .room-details__description .room-image-and-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .room-details__description .room-image-and-form__image {
+    width: 70%;
+    aspect-ratio: 16/9;
+  }
+  .room-details__description .room-image-and-form .availability-form__textarea-input {
+    height: 100px;
+  }
+  .room-details__description__big-description {
+    width: 60%;
+  }
+  .room-details__characteristics {
+    width: 80%;
+  }
+  .room-details__characteristics__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .room-details__founder {
+    width: 40%;
+    padding: 4rem 0;
+    box-shadow: 0 14px 24px rgba(190, 173, 142, 0.2705882353);
+  }
+  .room-details__cancelation {
+    width: 60%;
+    padding: 0;
+    padding-left: 3rem;
+    margin-bottom: 4rem;
+  }
+  .room-details__related-rooms .related-rooms-swiper .swiper-wrapper {
+    gap: 1rem;
+  }
+  .room-details__related-rooms .related-rooms-swiper .swiper-wrapper .related-rooms {
+    width: 30%;
+  }
+  .room-details__related-rooms .related-rooms-swiper .swiper-wrapper .related-rooms__characteristics, .room-details__related-rooms .related-rooms-swiper .swiper-wrapper .related-rooms__description {
+    opacity: 1;
+  }
+  .room-details__related-rooms .related-rooms-swiper .swiper-button-prev, .room-details__related-rooms .related-rooms-swiper .swiper-button-next {
+    display: none;
+  }
+}
 .offers {
   margin-top: 3rem;
   padding: 0 1rem;
