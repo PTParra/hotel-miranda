@@ -134,3 +134,58 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .offers{
+        margin-top: 6rem;
+        padding: 0 4rem;
+
+        &__room{
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+
+            &__image-link{
+                margin-bottom: -3rem;
+            }
+
+            &__description{
+                border-top: 4px solid $color-caqui;
+                position: relative;
+                width: 80%;
+                margin: 0 auto;
+                padding: 0 2rem;
+                
+                &__price-name{
+                    padding: 2rem 0;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 2px solid $color-gris-mas-claro;
+
+                    .room-name{
+                        &__title{
+                            width: auto;
+                        }
+
+                    }
+
+                    .room-prices{
+                        position: static;
+                    }
+                }
+
+                &__characteristics{
+
+                    .characteristics__text-block{
+                        display: flex;
+                        margin: 0;
+                        &__description-text{
+                            width: 60%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
