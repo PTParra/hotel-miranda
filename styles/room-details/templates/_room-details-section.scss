@@ -300,12 +300,15 @@
                 }
     
                 &__characteristics{
+                    width: 80%;
+                    margin: 0 auto;
                     transition: opacity 150ms ease-in;
                     opacity: 0;
                     padding: .8rem 1.5rem;
                     list-style: none;
-                    display: inline-flex;
-                    gap: 1rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
                     align-items: center;
                     background-color: $color-blanco;
                     position: relative;
@@ -405,14 +408,18 @@
         margin-bottom: 6rem;
         
         &__description {
-            position: relative;
+            
             .mini-description {
-                position: absolute;
+                width: 40%;
                 background-color: $color-blanco;
                 margin: 0;
+                margin-bottom: -4rem;
+                z-index: 4;
+                position: relative;
                 display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
                 padding: 1rem 2rem;
-                gap: 6rem;
                 &__room-name{
                     margin: 0;
                 }
@@ -430,7 +437,7 @@
                 align-items: flex-start;
                 &__image{
                     width: 70%;
-                    aspect-ratio: 16 / 9;
+                    aspect-ratio: 4 / 3;
                 }
                 .availability-form{
                     

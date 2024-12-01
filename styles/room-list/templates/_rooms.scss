@@ -32,10 +32,13 @@
             }
 
             &__room-perks {
+                width: 80%;
+                margin: 0 auto;
                 padding: .8rem 1.5rem;
                 list-style: none;
-                display: inline-flex;
-                gap: 1rem;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
                 align-items: center;
                 background-color: $color-blanco;
                 position: relative;

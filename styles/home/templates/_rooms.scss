@@ -34,11 +34,15 @@
             }
 
             &__characteristics{
+                width: 80%;
+                margin: 0 auto;
                 transition: opacity 150ms ease-in;
                 opacity: 0;
                 padding: .8rem 1.5rem;
                 list-style: none;
-                display: inline-flex;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
                 gap: 1rem;
                 align-items: center;
                 background-color: $color-blanco;
@@ -80,7 +84,7 @@
                     font-size: 2rem;
                     color: $color-caqui;
                     font-weight: 700;
-
+                    @include archivo-font;
                     &__per-night{
                         font-size: 0.8rem;
                     }
