@@ -633,11 +633,15 @@ body {
   margin-top: -1.5rem;
 }
 .rooms-section__swiper .room-selection__characteristics {
+  width: 80%;
+  margin: 0 auto;
   transition: opacity 150ms ease-in;
   opacity: 0;
   padding: 0.8rem 1.5rem;
   list-style: none;
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1rem;
   align-items: center;
   background-color: #ffffff;
@@ -673,6 +677,7 @@ body {
   font-size: 2rem;
   color: #BDAC8D;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
 .rooms-section__swiper .room-selection__description__price__per-night {
   font-size: 0.8rem;
@@ -1450,10 +1455,13 @@ body {
      object-fit: cover;
 }
 .rooms__grid-container__room__room-perks {
+  width: 80%;
+  margin: 0 auto;
   padding: 0.8rem 1.5rem;
   list-style: none;
-  display: inline-flex;
-  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #ffffff;
   position: relative;
@@ -1785,12 +1793,15 @@ body {
   margin-bottom: -1.5rem;
 }
 .room-details__related-rooms .related-rooms-swiper .related-rooms__characteristics {
+  width: 80%;
+  margin: 0 auto;
   transition: opacity 150ms ease-in;
   opacity: 0;
   padding: 0.8rem 1.5rem;
   list-style: none;
-  display: inline-flex;
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
   position: relative;
@@ -1867,16 +1878,17 @@ body {
     margin-right: auto;
     margin-bottom: 6rem;
   }
-  .room-details__description {
-    position: relative;
-  }
   .room-details__description .mini-description {
-    position: absolute;
+    width: 40%;
     background-color: #ffffff;
     margin: 0;
+    margin-bottom: -4rem;
+    z-index: 4;
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 1rem 2rem;
-    gap: 6rem;
   }
   .room-details__description .mini-description__room-name {
     margin: 0;
@@ -1892,7 +1904,7 @@ body {
   }
   .room-details__description .room-image-and-form__image {
     width: 70%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
   }
   .room-details__description .room-image-and-form .availability-form__textarea-input {
     height: 100px;
