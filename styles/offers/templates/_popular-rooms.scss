@@ -21,6 +21,7 @@
         text-decoration: none;
         color: $color-blanco;
         width: 80%;
+        margin-bottom: 2rem;
     }
 
     .popular-rooms-swiper{
@@ -37,9 +38,16 @@
             }
 
             &__characteristics{
+                width: 80%;
+                margin: 0 auto;
+                transition: opacity 150ms ease-in;
+                opacity: 0;
                 padding: .8rem 1.5rem;
                 list-style: none;
-                display: inline-flex;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                
                 gap: 1rem;
                 align-items: center;
                 background-color: $color-blanco;
@@ -54,10 +62,9 @@
                 margin-top: -2.1rem;
                 background-color: $color-blanco;
                 position: relative;
-                padding: 1rem 2rem;
+                padding: 2rem 2rem;
                 padding-top: 3rem;
                 &__text-container{
-                    
                     &__name{
                         display: inline-block;
                         @include old-standard-font;
@@ -79,13 +86,21 @@
                 }
 
                 &__price{
-                    font-size: 2rem;
+                    font-size: 1rem;
+                    display: inline-block;
                     color: $color-caqui;
                     font-weight: 700;
+                    @include archivo-font;
+                    margin-right: 1rem;
+                }
 
-                    &__per-night{
-                        font-size: 0.8rem;
-                    }
+                &__book-button{
+                    @include archivo-font;
+                    display: inline-block;
+                    font-size: 1rem;
+                    color: $color-gris-claro;
+                    font-weight: 700;
+                    text-decoration: none;
                 }
             }
 
@@ -96,6 +111,10 @@
 
             .room__description{
                 opacity: 1; 
+            }
+
+            .room__characteristics{
+                opacity: 1;
             }
         }
 
@@ -119,5 +138,30 @@
            font-size: .7rem;
            color: $color-negro;
         }   
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .popular-rooms{
+        margin-bottom: 5rem;
+        .popular-rooms-swiper{
+            width: 80%;
+
+            .swiper-wrapper{
+                justify-content: space-between;
+            }
+            .room{
+                width: 30%;
+
+                &__characteristics, &__description{
+                    opacity: 1;
+                }
+
+            }
+
+            .swiper-button-prev, .swiper-button-next{
+                display: none;
+            }
+        }
     }
 }

@@ -2055,6 +2055,46 @@ body {
   padding: 1.5rem 4rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .offers {
+    margin-top: 6rem;
+    padding: 0 4rem;
+  }
+  .offers__room {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .offers__room__image-link {
+    margin-bottom: -3rem;
+  }
+  .offers__room__description {
+    border-top: 4px solid #BDAC8D;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .offers__room__description__price-name {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ECECEC;
+  }
+  .offers__room__description__price-name .room-name__title {
+    width: auto;
+  }
+  .offers__room__description__price-name .room-prices {
+    position: static;
+  }
+  .offers__room__description__characteristics .characteristics__text-block {
+    display: flex;
+    margin: 0;
+  }
+  .offers__room__description__characteristics .characteristics__text-block__description-text {
+    width: 60%;
+  }
+}
 .popular-rooms {
   text-align: center;
   background-color: #222222;
@@ -2078,6 +2118,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   width: 80%;
+  margin-bottom: 2rem;
 }
 .popular-rooms .popular-rooms-swiper {
   width: 90%;
@@ -2094,9 +2135,15 @@ body {
   margin-bottom: -1.5rem;
 }
 .popular-rooms .popular-rooms-swiper .room__characteristics {
+  width: 80%;
+  margin: 0 auto;
+  transition: opacity 150ms ease-in;
+  opacity: 0;
   padding: 0.8rem 1.5rem;
   list-style: none;
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
   background-color: #ffffff;
@@ -2110,7 +2157,7 @@ body {
   margin-top: -2.1rem;
   background-color: #ffffff;
   position: relative;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   padding-top: 3rem;
 }
 .popular-rooms .popular-rooms-swiper .room__description__text-container__name {
@@ -2130,14 +2177,25 @@ body {
   margin-bottom: 1rem;
 }
 .popular-rooms .popular-rooms-swiper .room__description__price {
-  font-size: 2rem;
+  font-size: 1rem;
+  display: inline-block;
   color: #BDAC8D;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  margin-right: 1rem;
 }
-.popular-rooms .popular-rooms-swiper .room__description__price__per-night {
-  font-size: 0.8rem;
+.popular-rooms .popular-rooms-swiper .room__description__book-button {
+  font-family: "Archivo", sans-serif;
+  display: inline-block;
+  font-size: 1rem;
+  color: #BDBDBD;
+  font-weight: 700;
+  text-decoration: none;
 }
 .popular-rooms .popular-rooms-swiper .room.swiper-slide-active .room__description {
+  opacity: 1;
+}
+.popular-rooms .popular-rooms-swiper .room.swiper-slide-active .room__characteristics {
   opacity: 1;
 }
 .popular-rooms .popular-rooms-swiper .swiper-button-prev, .popular-rooms .popular-rooms-swiper .swiper-button-next {
@@ -2158,6 +2216,26 @@ body {
   color: #111111;
 }
 
+@media only screen and (min-width: 1000px) {
+  .popular-rooms {
+    margin-bottom: 5rem;
+  }
+  .popular-rooms .popular-rooms-swiper {
+    width: 80%;
+  }
+  .popular-rooms .popular-rooms-swiper .swiper-wrapper {
+    justify-content: space-between;
+  }
+  .popular-rooms .popular-rooms-swiper .room {
+    width: 30%;
+  }
+  .popular-rooms .popular-rooms-swiper .room__characteristics, .popular-rooms .popular-rooms-swiper .room__description {
+    opacity: 1;
+  }
+  .popular-rooms .popular-rooms-swiper .swiper-button-prev, .popular-rooms .popular-rooms-swiper .swiper-button-next {
+    display: none;
+  }
+}
 .info {
   margin-top: 2rem;
   margin-bottom: 3.5rem;
